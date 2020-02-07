@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.body {
+    width: 100%;
+    height: 100%;
+}
+.title {
+    text-align: center;
+    background-color: blue;
+    color: cornsilk;
+}
+.link-tong-hop {
+    text-align: center;
+    padding-top: 10px;
+}
+.link-tong-hop a {
+    text-decoration: none;
+    color: green;
+}
