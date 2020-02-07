@@ -19,3 +19,11 @@
     text-decoration: none;
     color: green;
 }
+.title-item  {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+    color: cornsilk;
+    background-color: blue;
+    font-size: 20px;
+}
