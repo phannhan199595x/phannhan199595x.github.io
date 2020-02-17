@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuerySlider</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="slider.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>jQuery-Slider</h2>
+        </div>
+        <div class="slider">
+            <div class="slides fade">
+                <img src="images/avenger.jpg" alt="">
+            </div>
+            <div class="slides fade">
+                <img src="images/avenger1.jpg" alt="">
+            </div>
+            <div class="slides fade">
+                <img src="images/dragonball.jpg" alt="">
+            </div>
+            <div class="slides fade">
+                <img src="images/dragonball2.jpg" alt="">
+            </div>
+            <div class="slides fade">
+                <img src="images/ironman.jpg" alt="">
+            </div>
+            <div class="slides fade">
+                <img src="images/naruto.jpg" alt="">
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide(1)">❮</button>
+        <button class="next" onclick="nextSlide(1)">❯</button>
+        <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="images/avenger.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/avenger1.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/dragonball.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/dragonball2.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/ironman.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="images/naruto.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+            </div>
+          </div>
+    </div>
+<script>
+  //demo javascript// 
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function prevSlide(n) {
+  showSlides(slideIndex -= n);
+}
+function nextSlide(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("demo");
+  if(n > slides.length) { slides.length = 1 }
+  if(n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+var slideIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  var y = document.getElementsByClassName("demo");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  for (i = 0; i < y.length; i++) {
+      y[i].className = y[i].className.replace(" active", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  y[slideIndex-1].className += " active";
+  setTimeout(carousel, 3000);
+}
+//end demo javascript//
+</script>
+</body>
+</html>
