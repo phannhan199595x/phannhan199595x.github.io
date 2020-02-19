@@ -57,8 +57,8 @@ main {
     margin: 5px 0px;
     position: relative;
 }
-.side-bar {
-    width: 100%;
+.menu-mobile .side-bar {
+    width: 0%;
     height: 100%;
     background-color: black;
     position: fixed;
@@ -69,7 +69,7 @@ main {
     transition: 0.5s;
     padding-top: 60px;
 }
-.side-bar .closebtn {
+.menu-mobile .side-bar .closebtn {
     position: absolute;
     top: 0;
     left:25px;
@@ -78,7 +78,7 @@ main {
     width: 100%;
     height: auto;
 }
-.side-bar a {
+.menu-mobile .side-bar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     text-transform: uppercase;
@@ -88,7 +88,7 @@ main {
     color: rgba(230, 230, 230, 0.9);
     transition: 0.3s;
 }
-.side-bar a:hover {
+.menu-mobile .side-bar a:hover {
     color: green;
 }
 .menu {
