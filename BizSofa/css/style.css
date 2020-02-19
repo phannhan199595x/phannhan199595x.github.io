@@ -1,3 +1,4 @@
+/* Trang chu css */
 *{
     margin: 0;
     padding: 0;
@@ -301,3 +302,76 @@ main {
     }
 }
 /* End Responsive */
+/* End Trang chu css */
+/* Trang category css */
+/* Main Category */
+.banner {
+    width: 100%;
+    height: auto;
+}
+.banner img {
+    width: 100%;
+    height: auto;
+}
+.design-product {
+    padding-top: 50px;
+    padding-left: 40px;
+}
+.design-product .title {
+    padding-bottom: 54px;
+}
+.design-product p {
+    padding-bottom: 61px;
+}
+hr {
+    width: 100%;
+}
+.line {
+    width: 62px;
+}
+.product {
+    background: #f6f6f6;
+    padding: 120px 108px 80px 130px;
+    position: relative;
+    width: 100%;
+    height: 1193px;
+}
+.product h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.product .product-items {
+    padding-top: 35px;
+}
+.product-items {
+    width: 100%;
+    height: auto;
+}
+.product-items .product-details img {
+    width: 100%;
+    height: auto;
+}
+.product-items .product-box1 {
+    width: 33.33%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.product-items .product-box2 {
+    width: 33.33%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    left: 400px;
+}
+.product-items .product-box3 {
+    width: 33.33%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.product-details img{
+    height: 443;
+}
+/* End main category */
+/* End trang category css */
