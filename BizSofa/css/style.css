@@ -148,7 +148,7 @@ main {
     max-width: 100%;
     height: auto;
     display: none;
-    padding: 5px;
+    padding: 10px 19px 19px 12px;
 }
 .product-item .slides .mySlides {
     display: none;
@@ -158,13 +158,13 @@ main {
     height: 15px;
     width: 15px;
     margin: 0 4px;
-    background-color: #bbb;
+    background-color: #666666;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-    position: absolute;
+    /* position: absolute; */
     display: none;
-    bottom: 10px;
+    top: 340px;
 }
 .fade {
     -webkit-animation-name: fade;
@@ -188,7 +188,7 @@ main {
     background: #888; 
 }
 .active, .dot:hover {
-    background-color: green;
+    background-color: #139e43;
 }
 .product-item .slides .mySlides img {
     vertical-align: middle;
