@@ -204,10 +204,11 @@ main {
         width: 100%;
     }
     .about-product .title {
-        font-size: 35px;
+        font-size: 36px;
     }
-    .menu-mobile .side-bar {
-        /* display: none; */
+    .about-product .btn-readmore {
+        color: white;
+        background-color: black;
     }
 }
 /* End Responsive */
