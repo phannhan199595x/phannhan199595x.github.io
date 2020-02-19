@@ -53,6 +53,19 @@
         </div>
         <main>
             <div class="product-item">
+                <div class="slides">
+                    <div class="mySlides fade">
+                        <img src="../images/product/banner.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../images/product/banner.png" style="width:100%">
+                    </div>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
                 <div class="product-img">
                     <div class="img-left">
                         <a href="#"><img src="../images/p1.png" alt=""></a>
@@ -75,8 +88,8 @@
                     <input type="text" class="form-contact" value="Your email address">
                 </div>
                 <div class="contact-icon">
-                    <a href="#"><img src="../images/icons/paypal.png" alt=""></a>
-                    <a href="#"><img src="../images/icons/visa.png" alt=""></a>
+                    <a href="#"><img src="../images/icons/paypal.png" alt="" ></a>
+                    <a href="#"><img src="../images/icons/visa.png" alt="" ></a>
                     <a href="#"><img src="../images/icons/mastercard.png" alt=""></a>
                     <a href="#"><img src="../images/icons/discover.png" alt=""></a>
                 </div>
@@ -90,6 +103,33 @@
         function closeNav() {
             document.getElementById("sidebar").style.width = "0";
         }
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
     </script>
 </body>
+
 </html>
