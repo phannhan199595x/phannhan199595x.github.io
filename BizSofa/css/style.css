@@ -226,8 +226,11 @@ main {
     padding-bottom: 34px;
 }
 .contact .form-contact {
-    width: 25%;
+    width: 35%;
     margin-bottom: 110px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
 }
 .contact .contact-icon {
     padding-bottom: 83px;
@@ -284,8 +287,8 @@ main {
         font-size: 44px;
     }
     .about-product .btn-readmore {
-        color: white;
-        background-color: black;
+        color: #fdfdfd;
+        background-color: #333333;
     }
     .product-item .slides {
         display: block;
