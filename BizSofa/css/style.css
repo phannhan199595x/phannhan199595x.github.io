@@ -103,6 +103,7 @@ main {
 .menu .logo img {
     margin: 70px 0px 50px;
     max-width: 100%;
+    padding: 0 35px;
 }
 .menu .menu-top a {
     text-transform: uppercase;
@@ -121,7 +122,7 @@ main {
     opacity: 0.5;
 }
 .menu .menu-bot img {
-    padding-right: 15px;
+    padding-right: 10px;
     padding-bottom: 28px;
 }
 /* End Css Header */
