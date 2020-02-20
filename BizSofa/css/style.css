@@ -7,6 +7,7 @@
 }
 body {
     width: 100%;
+    height: auto;
 }
 .container {
     width: 100%;
@@ -125,6 +126,10 @@ main {
 .menu .menu-bot img {
     padding-right: 10px;
     padding-bottom: 28px;
+    width: 30px;
+}
+.menu .menu-bot p {
+    font-size: 13px;
 }
 /* End Css Header */
 /* Css Main */
@@ -217,17 +222,26 @@ main {
 }
 .contact {
     text-align: center;
-    padding-top: 125px;
-}
-.contact h3 {
-    text-transform: uppercase;
-    padding-bottom: 31px;
+    padding-top: 87px;
 }
 .contact p {
+    font-style: italic;
     padding-bottom: 34px;
 }
+.contact-title p {
+    text-transform: uppercase;
+    font-style: normal;
+}
+.contact i {
+    width: 47px;
+    height: 40px;
+    border: 1px solid;
+    opacity: 0.4;
+    position: absolute;
+    padding-top: 10px;
+}
 .contact .form-contact {
-    width: 35%;
+    width: 30%;
     margin-bottom: 110px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -238,6 +252,10 @@ main {
 }
 .contact .contact-icon img{
     padding-right: 25px;
+    filter: grayscale(100%);
+}
+.contact .line-contact {
+    padding-bottom: 102px;
 }
 /* End Css Main */
 /* End Trang chu css */
@@ -264,6 +282,7 @@ main {
 }
 hr {
     width: 100%;
+    opacity: 0.3;
 }
 .line {
     width: 62px;
@@ -284,7 +303,7 @@ hr {
 }
 .product-items {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .product-items .product-details img {
     width: 100%;
@@ -312,11 +331,17 @@ hr {
 .product-details img{
     height: 443;
 }
+.product-details {
+    background-color: #ffffff;
+}
 /* End main category */
 /* End trang category css */
 /* Responsive */
+@media only screen and (max-width: 767px) {
 
-@media only screen and (max-width: 767px){
+}
+
+@media only screen and (max-width: 600px){
     .menu {
         display: none;
     }
