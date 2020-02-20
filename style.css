@@ -11,13 +11,54 @@
     background-color: rgb(0, 0, 0,0.8);
     color: cornsilk;
 }
+.link-tong {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.link-tong a {
+    background-color: rgb(0, 0, 0,0.8);
+    color: cornsilk;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.link-tong a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+.link {
+    text-align: center;
+    text-transform: uppercase;
+}
+.link a {
+    text-decoration: none;
+    color: cornsilk;
+    background-color: rgb(0, 0, 0,0.8);
+    text-transform: uppercase;
+}
+.link a:hover {
+    text-decoration: none;
+    color: yellow;
+}
 .link-tong-hop {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 2px solid #333333;
 }
-.link-tong-hop a {
+.link-item {
+    padding-top: 20px;
+}
+.link-item a {
     text-decoration: none;
-    color: green;
+    color: cornsilk;
+    background-color: rgb(0, 0, 0,0.8);
+    text-transform: uppercase;
+}
+.link-item a:hover {
+    color: yellow;
+    text-decoration: none;
 }
 .title-item  {
     text-align: center;
@@ -26,4 +67,7 @@
     color: white;
     background-color: rgb(0, 0, 0,0.8);
     font-size: 20px;
+}
+.tuan2 {
+    
 }
