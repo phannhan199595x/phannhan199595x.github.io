@@ -90,7 +90,9 @@
                     </div>
                 </div>
                 <div class="about-product">
-                    <p class="title">Những điều bạn cần biết cho đơn hàng đầu tiên</p>
+                    <div class="about-product-title">
+                        <p>Những điều bạn cần biết cho đơn hàng đầu tiên</p>
+                    </div>
                     <button class="btn-readmore">Read more</button>
                 </div>
             </div>
@@ -98,7 +100,7 @@
                 <div class="line-contact">
 
                     <hr>
-                    
+
                 </div>
                 <div class="contact-group">
                     <div class="contact-title">
@@ -123,6 +125,7 @@
         }
         function closeNav() {
             document.getElementById("sidebar").style.width = "0";
+            document.getElementById("sidebar").display = "none";
         }
         var slideIndex = 1;
         showSlides(slideIndex);
