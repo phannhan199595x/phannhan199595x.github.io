@@ -295,7 +295,6 @@ hr {
 .product {
     background: #f6f6f6;
     padding: 120px 108px 80px 130px;
-    position: relative;
     width: 100%;
     height: 1193px;
 }
@@ -319,6 +318,7 @@ hr {
     float: left;
     display: flex;
     flex-direction: column;
+    padding-right: 35px;
 }
 .product-items .product-box2 {
     width: 33.33%;
@@ -326,18 +326,35 @@ hr {
     display: flex;
     flex-direction: column;
     left: 400px;
+    padding-right: 35px;
 }
 .product-items .product-box3 {
     width: 33.33%;
     float: left;
     display: flex;
     flex-direction: column;
+    padding-right: 35px;
 }
-.product-details img{
-    height: 443;
+.product-details-box {
+    background: #ffffff;
+    margin-bottom: 65px;
+    height: 105px;
+    
 }
-.product-details {
-    background-color: #ffffff;
+.product-details-box h5 {
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-top: 25px;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 26px;
+
+}
+.product-details-box p {
+    font-size: 12px;
+    padding-bottom: 21px;
+    padding-top: 15px;
+    padding-left: 25px;
 }
 /* End main category */
 /* End trang category css */
@@ -421,7 +438,28 @@ hr {
         display: inline-block;
     }
     .banner img {
-        display: inline-block;
+        margin-top: 100px;
+    }
+    .product-items .product-box1 {
+        width: 100%;
+        flex-direction: row;
+        padding-right: 0;
+    }
+    .product-items .product-box2 {
+        width: 100%;
+        flex-direction: row;
+        padding-right: 0;
+    }
+    .product-items .product-box3 {
+        width: 100%;
+        flex-direction: row;
+        padding-right: 0;
+    }
+    .product {
+        height: 1350px;
+    }
+    .product-details {
+        padding-left: 15px;
     }
 }
 /* end tablet responsive */
@@ -498,7 +536,24 @@ hr {
     .banner img {
         display: inline-block;
     }
-}
+    .product-items .product-box1 {
+        width: 100%;
+        flex-direction: row;
+        padding-right: 0;
+    }
+    .product-items .product-box2 {
+        width: 100%;
+        flex-direction: row;
+        padding-right: 0;
+    }
+    .product-items .product-box3 {
+        width: 100%;
+        flex-direction: row;
+        padding-right: 0;
+    }
+    .product {
+        height: 1110px;
+    }
 @media only screen and (min-width: 600px) {
     .about-product .about-product-title {
         font-size: 32px;

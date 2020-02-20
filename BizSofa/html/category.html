@@ -8,6 +8,7 @@
         href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/903b12981f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -77,46 +78,66 @@
                     <div class="product-box1">
                         <div class="product-details">
                             <img src="../images/product/1.png" alt="">
-                            <h5>Portfolio item title</h5>
-                            <p>Branding</p>
+                            <div class="product-details-box">
+                                <h5>Portfolio item title</h5>
+                                <p>Branding</p>
+                            </div>
                         </div>
                         <div class="product-details">
                             <img src="../images/product/1.png" alt="">
-                            <h5>Portfolio item title</h5>
-                            <p>Branding</p>
+                            <div class="product-details-box">
+                                <h5>Portfolio item title</h5>
+                                <p>Branding</p>
+                            </div>
                         </div>
                     </div>
                     <div class="product-box2">
                         <div class="product-details">
                             <img src="../images/product/2.png" alt="">
-                            <h5>Portfolio item title</h5>
-                            <p>Branding,Graphics</p>
+                            <div class="product-details-box">
+                                <h5>Portfolio item title</h5>
+                                <p>Branding,Graphics</p>
+                            </div>
                         </div>
                         <div class="product-details">
                             <img src="../images/product/2.png" alt="">
-                            <h5>Portfolio item title</h5>
-                            <p>Branding,Graphics</p>
+                            <div class="product-details-box">
+                                <h5>Portfolio item title</h5>
+                                <p>Branding,Graphics</p>
+                            </div>
                         </div>
                     </div>
                     <div class="product-box3">
                         <div class="product-details">
                             <img src="../images/product/3.png" alt="">
-                            <h5>Portfolio item title</h5>
-                            <p>Web Design</p>
+                            <div class="product-details-box">
+                                <h5>Portfolio item title</h5>
+                                <p>Web Design</p>
+                            </div>
                         </div>
                         <div class="product-details">
                             <img src="../images/product/3.png" alt="">
-                            <h5>Portfolio item title</h5>
-                            <p>Web Design</p>
+                            <div class="product-details-box">
+                                <h5>Portfolio item title</h5>
+                                <p>Web Design</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="contact">
+                <div class="line-contact">
+
+                    <hr>
+
+                </div>
                 <div class="contact-group">
-                    <h3>Need to talk</h3>
+                    <div class="contact-title">
+                        <p>Need to <strong>talk</strong></p>
+                    </div>
                     <p>Enter your email and we'll send you a coupon with 10% off your next door</p>
-                    <input type="text" class="form-contact" value="Your email address">
+                    <input type="text" class="form-contact" placeholder="Your email address"><i class="fas fa-paper-plane"></i>
+                    
                 </div>
                 <div class="contact-icon">
                     <a href="#"><img src="../images/icons/paypal.png" alt="" ></a>
@@ -126,5 +147,40 @@
                 </div>
             </div>
         </main>
+        <script>
+            function toggleSidebar() {
+                document.getElementById("sidebar").style.width = "250px";
+            }
+            function closeNav() {
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementById("sidebar").display = "none";
+            }
+            var slideIndex = 1;
+            showSlides(slideIndex);
+    
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+    
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+    
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
 </body>
 </html>
