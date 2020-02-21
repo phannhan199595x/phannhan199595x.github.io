@@ -358,6 +358,39 @@ hr {
 }
 /* End main category */
 /* End trang category css */
+/* Trang detail */
+.detail {
+    width: 100%;
+    padding: 0;
+}
+.detail .detail-items1{
+    width: 33.3%;
+    float: left;
+}
+.detail-items1 img {
+    width: 100%;
+    padding: 0;
+}
+.detail-box {
+    background: #f8f8f8;
+}
+.detail .detail-items2{
+    width: 33.3%;
+    float: left;
+    padding: 0;
+}
+.detail-items2 img {
+    width: 100%;
+}
+.detail .detail-items3{
+    width: 33.3%;
+    float: left;
+    padding: 0;
+}
+.detail-items3 img {
+    width: 100%;
+}
+/* End trang detail */
 /* Responsive */
 @media only screen and (max-width: 992px) {
     .contact .form-contact {
