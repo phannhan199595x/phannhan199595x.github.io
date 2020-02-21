@@ -14,48 +14,36 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="box-header">
-            <div class="menu-mobile">
-                <div class="logo-mobile">
-                    <a href="#"><img src="../images/logo-mobile.png" alt=""></a>
-                </div>
-                <div class="toggle-btn" onclick="toggleSidebar()" id="main">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="side-bar" id="sidebar">
-                    <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#">Home page</a>
-                    <a href="#">About us</a>
-                    <a href="#">Product</a>
-                    <a href="#">Contact</a>
-                </div>
+    <div class="box-header">
+        <div class="menu-mobile">
+            <div class="logo-mobile">
+                <a href="#"><img src="../images/logo-mobile.png" alt=""></a>
             </div>
-            <div class="menu">
-                <div class="logo">
-                    <img src="../images/logo.png" alt="">
-                </div>
-                <div class="menu-top">
-                    <a href="../html/trangchu.html" class="item">Home Page</a>
-
-                    <hr>
-
-                    <a href="" class="item">About Us</a>
-
-                    <hr>
-
-                    <a href="../html/detail.html" class="item">Product</a>
-
-                    <hr>
-
-                    <a href="../html/category.html" class="item">Contact</a>
-
-                    <hr>
-
-                </div>
-                <div class="menu-bot">
+            <div class="toggle-btn" onclick="toggleSidebar()" id="main">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="side-bar" id="sidebar">
+                <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home page</a>
+                <a href="#">About us</a>
+                <a href="#">Product</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="menu-top">
+                <a href="../html/trangchu.html" class="item">Home Page</a>
+                <a href="" class="item">About Us</a>
+                <a href="../html/detail.html" class="item">Product</a>
+                <a href="../html/category.html" class="item">Contact</a>
+            </div>
+            <div class="menu-bot">
+                <div class="menu-bot-icon">
                     <a href="#"><img src="../images/icons/facebook-icon.png" alt=""></a>
                     <a href="#"><img src="../images/icons/twitter-icon.png" alt=""></a>
                     <a href="#"><img src="../images/icons/googleplus-icon.png" alt=""></a>
@@ -64,61 +52,59 @@
                 </div>
             </div>
         </div>
-        <main>
-            <div class="product-item">
-                <div class="slides">
-                    <div class="mySlides fade">
-                        <img src="../images/product/banner.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img src="../images/product/banner.png" style="width:100%">
-                    </div>
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                    </div>
-                </div>
-                <div class="product-img">
-                    <div class="img-left">
-                        <a href="#"><img src="../images/p1.png" alt=""></a>
-                        <a href="#"><img src="../images/p3.png" alt=""></a>
-                    </div>
-                    <div class="img-right">
-                        <a href="#"><img src="../images/p2.png" alt=""></a>
-                        <a href="#"><img src="../images/p4.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="about-product">
-                    <div class="about-product-title">
-                        <p>Những điều bạn cần biết cho đơn hàng đầu tiên</p>
-                    </div>
-                    <button class="btn-readmore">Read more</button>
-                </div>
-            </div>
-            <div class="contact">
-                <div class="line-contact">
-
-                    <hr>
-
-                </div>
-                <div class="contact-group">
-                    <div class="contact-title">
-                        <p>Need to <strong>talk</strong></p>
-                    </div>
-                    <p>Enter your email and we'll send you a coupon with 10% off your next door</p>
-                    <input type="text" class="form-contact" placeholder="Your email address"><i class="fas fa-paper-plane"></i>
-                    
-                </div>
-                <div class="contact-icon">
-                    <a href="#"><img src="../images/icons/paypal.png" alt="" ></a>
-                    <a href="#"><img src="../images/icons/visa.png" alt="" ></a>
-                    <a href="#"><img src="../images/icons/mastercard.png" alt=""></a>
-                    <a href="#"><img src="../images/icons/discover.png" alt=""></a>
-                </div>
-            </div>
-        </main>
     </div>
+    <main>
+        <div class="product-item">
+            <div class="slides">
+                <div class="mySlides fade">
+                    <img src="../images/product/banner.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="../images/product/banner.png" style="width:100%">
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+            <div class="product-img">
+                <div class="img-left">
+                    <a href="#"><img src="../images/p1.png" alt=""></a>
+                    <a href="#"><img src="../images/p3.png" alt=""></a>
+                </div>
+                <div class="img-right">
+                    <a href="#"><img src="../images/p2.png" alt=""></a>
+                    <a href="#"><img src="../images/p4.png" alt=""></a>
+                </div>
+            </div>
+            <div class="about-product">
+                <div class="about-product-title">
+                    <p>Những điều bạn cần biết cho đơn hàng đầu tiên</p>
+                </div>
+                <button class="btn-readmore">Read more</button>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact-group">
+                <div class="contact-title">
+                    <p>Need to <strong>talk</strong></p>
+                </div>
+                <p>Enter your email and we'll send you a coupon with 10% off your next order</p>
+                <div class="form-control">
+                    <form action="">
+                        <input type="text" class="form-contact" placeholder="Your email address">
+                        <button type="button" class="fas fa-paper-plane btn-icon"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-icon">
+                <a href="#"><img src="../images/icons/paypal.png" alt=""></a>
+                <a href="#"><img src="../images/icons/visa.png" alt=""></a>
+                <a href="#"><img src="../images/icons/mastercard.png" alt=""></a>
+                <a href="#"><img src="../images/icons/discover.png" alt=""></a>
+            </div>
+        </div>
+    </main>
     <script>
         function toggleSidebar() {
             document.getElementById("sidebar").style.width = "250px";
