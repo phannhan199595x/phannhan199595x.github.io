@@ -285,6 +285,10 @@ main {
 /* End Trang chu css */
 /* Trang category css */
 /* Main Category */
+.container {
+    height: auto;
+    margin: 0px 30px;
+}
 .banner {
     width: 100%;
     height: auto;
@@ -292,85 +296,58 @@ main {
 .banner img {
     width: 100%;
     height: auto;
-    padding: 10px 19px 19px 12px;
+    padding-top: 20px;
 }
 .design-product {
     padding-top: 50px;
-    padding-left: 40px;
 }
 .design-product .title {
-    padding-bottom: 54px;
+    padding-bottom: 50px;
 }
 .design-product p {
     padding-bottom: 61px;
-}
-hr {
-    width: 100%;
-    opacity: 0.3;
+    width: 940px;
 }
 .product {
     background: #f6f6f6;
-    padding: 120px 108px 80px 130px;
+    padding: 120px 34px 22px 74px;
     width: 100%;
-    height: 1193px;
+    height: 1075px;
 }
 .product h4 {
     text-transform: uppercase;
     font-size: 20px;
+    border-bottom: 1px solid;
 }
-.product .product-items {
+.product-list {
     padding-top: 35px;
 }
-.product-items {
+.product-list .product-box {
+    width: 33.33%;
+    float: left;
+}
+.product-list .product-box img {
     width: 100%;
-    height: 100%;
 }
-.product-items .product-details img {
-    width: 100%;
-    height: auto;
-}
-.product-items .product-box1 {
-    width: 33.33%;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    padding-right: 35px;
-}
-.product-items .product-box2 {
-    width: 33.33%;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    left: 400px;
-    padding-right: 35px;
-}
-.product-items .product-box3 {
-    width: 33.33%;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    padding-right: 35px;
-}
-.product-details-box {
-    background: #ffffff;
-    margin-bottom: 65px;
-    height: 105px;
+.product-list .product-box {
+    padding-right: 37px;
+    padding-bottom: 62px;
     
 }
-.product-details-box h5 {
-    text-transform: uppercase;
-    font-size: 16px;
-    padding-top: 25px;
-    font-style: normal;
-    font-weight: normal;
-    padding-left: 26px;
-
+.product-details {
+    background: #ffffff;
+    height: 80px;
+    padding: 26px 182px 28px 26px;
+    width: 100%;
 }
-.product-details-box p {
+.product-box .title {
+    text-transform: uppercase;
+    width: 242px;
+    color: black;
+}
+.product-box .text {
+    width: 242px;
     font-size: 12px;
-    padding-bottom: 21px;
-    padding-top: 15px;
-    padding-left: 25px;
 }
 /* End main category */
 /* End trang category css */
