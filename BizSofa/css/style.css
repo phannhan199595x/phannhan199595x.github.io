@@ -11,7 +11,7 @@
 }
 main {
     height: 100%;
-    padding-left: 336px;
+    padding-left: 366px;
     float: left;
 }
 /* Css Header */
@@ -280,8 +280,11 @@ main {
 /* Trang category css */
 /* Main Category */
 .container {
-    height: auto;
-    margin: 0px 30px;
+    width: 100%;
+    height: 100%;
+}
+.container::after {
+    clear: both;
 }
 .banner {
     width: 100%;
