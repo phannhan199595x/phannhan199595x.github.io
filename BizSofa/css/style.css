@@ -9,11 +9,6 @@
     position: fixed;
     float: left;
 }
-.box-header::after {
-    content: "";
-    clear: both;
-    display: block;
-}
 main {
     height: 100%;
     padding-left: 336px;
@@ -305,7 +300,7 @@ main {
 }
 .design-product p {
     padding-bottom: 61px;
-    width: 940px;
+
 }
 .product {
     background: #f6f6f6;

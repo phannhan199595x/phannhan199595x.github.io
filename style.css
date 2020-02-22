@@ -16,14 +16,13 @@
     padding-bottom: 20px;
 }
 .link-tong a {
-    background-color: rgb(0, 0, 0,0.8);
-    color: cornsilk;
+    color: green;
     text-decoration: none;
+    font-weight: bold;
     text-transform: uppercase;
 }
 .link-tong a:hover {
     text-decoration: none;
-    color: yellow;
 }
 .link {
     text-align: center;
@@ -31,13 +30,12 @@
 }
 .link a {
     text-decoration: none;
-    color: cornsilk;
-    background-color: rgb(0, 0, 0,0.8);
+    color: green;
     text-transform: uppercase;
+    font-weight: bold;
 }
 .link a:hover {
     text-decoration: none;
-    color: yellow;
 }
 .link-tong-hop {
     text-align: center;
@@ -52,12 +50,11 @@
 }
 .link-item a {
     text-decoration: none;
-    color: cornsilk;
-    background-color: rgb(0, 0, 0,0.8);
+    color: green;
+    font-weight: bold;
     text-transform: uppercase;
 }
 .link-item a:hover {
-    color: yellow;
     text-decoration: none;
 }
 .title-item  {
@@ -68,6 +65,30 @@
     background-color: rgb(0, 0, 0,0.8);
     font-size: 20px;
 }
-.tuan2 {
-    
+.list-item a {
+    font-size: 12px;
+    color: black;
+}
+.container {
+    padding-top: 10px;
+}
+.container a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container a:hover {
+    text-decoration: none;
+}
+.list-group {
+    width: 50%;
+    margin: auto;
+}
+.list-group a {
+    font-size: 12px;
+    color: black;
+}
+.list-group a :hover {
+    text-decoration: none;
 }
