@@ -151,7 +151,7 @@ main {
 }
 .product-item .product-img img {
     width: 100%;
-    padding: 10px 10px 19px 12px;
+    padding: 10px 10px 19px 24px;
 }
 .product-item .slides {
     max-width: 100%;
@@ -205,8 +205,8 @@ main {
     height: 445px;
     background-color: #159c40;
     text-align: center;
-    margin-left: 12px;
-    margin-right: 20px;
+    margin-left: 24px;
+    margin-right: 8px;
 }
 .about-product .about-product-title {
     color: white;
