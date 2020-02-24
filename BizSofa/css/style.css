@@ -316,7 +316,8 @@ main {
 .product h4 {
     text-transform: uppercase;
     font-size: 20px;
-    border-bottom: 1px solid;
+    padding-bottom: 20px;
+    /* border-bottom: 1px solid; */
 }
 .product-list {
     padding-top: 35px;
@@ -338,6 +339,9 @@ main {
     height: 80px;
     padding: 26px 182px 28px 26px;
     width: 100%;
+}
+.product hr {
+    width: 70px;
 }
 .product-box .title {
     text-transform: uppercase;
@@ -373,11 +377,10 @@ main {
 }
 .product-details {
     /* visibility: hidden; */
+    width: 100%;
     
 }
-.detail-box:hover {
-    transition: height 2s;
-}
+.product-detail
 .product-details .title {
     border-bottom: 1px solid;
 }
