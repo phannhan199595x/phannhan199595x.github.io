@@ -105,7 +105,7 @@ main {
     color: #010101;
     line-height: 30px;
     position: relative;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #f3f3f3;
 }
 .menu .menu-top a:hover {
     color: rgb(35, 161, 77);
@@ -151,7 +151,7 @@ main {
 }
 .product-item .product-img img {
     width: 100%;
-    padding: 10px 19px 19px 12px;
+    padding: 10px 10px 19px 12px;
 }
 .product-item .slides {
     max-width: 100%;
