@@ -357,34 +357,68 @@ main {
 /* End main category */
 /* End trang category css */
 /* Trang detail */
+.container-details {
+    width: 100%;
+    height: auto;
+    padding-left: 35px;
+}
+.design-detail-product {
+    width: 100%;
+}
+.design-detail-product .title {
+    padding-top: 70px;
+}
+.design-detail-product p {
+    width: 950px;
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
 .details {
     width: 100%;
     height: auto;
 }
 .detail-list {
     width: 100%;
-    height: 1250px;
+    height: 1100px;
 }
-.details .detail-box{
+.detail-list .detail-box{
     width: 33.3%;
     float: left;
-    padding-right: 55px;
-    padding-bottom: 50px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    position: relative;
 }
 .detail-list .detail-box img {
     width: 100%;
     height: auto;
+    display: block;
+    opacity: 1;
+    overflow: hidden;
 }
-.product-details {
-    /* visibility: hidden; */
-    width: 100%;
-}
-.product-details hr {
-    width: 30px;
-}
-.product-details .title {
+.detail-product .title {
     text-transform: uppercase;
-    width: 200px;
+    width: 300px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.detail-product hr {
+    width: 50px;
+}
+.detail-product {
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 26px 182px 15px 26px;
+}
+.detail-box:hover .detail-product {
+    opacity: 1;
+    transition: 0.5s;
+    bottom: 20px;
+}
+.detail-product .text {
+    padding-top: 10px;
 }
 /* End trang detail */
 /* Responsive */
@@ -411,8 +445,46 @@ main {
     .product {
         height: 1550px;
     }
+    /* .detail-product {
+        width: 220px;
+        height: 50px;
+        padding: 0;
+    } */
+    .detail-list {
+        height: 750px;
+    }
+    .design-detail-product p {
+        width: auto;
+    }
+    .detail-product .title {
+        width: 210px;
+    }
 }
 @media only screen and (max-width: 992px) {
+    .menu {
+        display: none;
+    }
+    .menu-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        position: none;
+    }
+    .box-header {
+        width: 0;
+        height: 0;
+    }
+    main {
+        position: none;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        display: contents;
+    }
     .contact .form-contact {
         width: 32%;
     }
@@ -429,6 +501,31 @@ main {
     .product {
         height: 1240px;
     }
+    /* detail */
+    .detail-product {
+        width: 265px;
+        top: 70%;
+    }
+    .detail-list .detail-box {
+        width: 50%;
+        position: unset;
+    }
+    .detail-list {
+        height: 2900px;
+    }
+    .detail-product {
+        width: auto;
+        position: unset;
+        height: auto;
+        padding: 20px;
+    }
+    .design-detail-product {
+        padding-top: 100px;
+    }
+    .design-detail-product p {
+        width: 700px;
+    }
+    /* End detail */
 }
 /* tablet responsive */
 @media only screen and (max-width: 767px) {
@@ -555,6 +652,24 @@ main {
         width: 100%;
     }
     /* end category */
+    .detail-box {
+        position: unset;
+    }
+    .detail-product {
+        width: auto;
+        position: unset;
+        height: auto;
+        padding: 20px;
+    }
+    .detail-list {
+        height: 2300px;
+    }
+    .design-detail-product {
+        padding-top: 100px;
+    }
+    .design-detail-product p {
+        width: 600x;
+    }
 }
 /* end tablet responsive */
 /* mobile responsive */
@@ -680,6 +795,23 @@ main {
         width: 50%;
     } */
     /* end category */
+    .detail-box {
+        position: unset;
+    }
+    .detail-product {
+        width: auto;
+        position: unset;
+        height: auto;
+    }
+    .overlay {
+        opacity: 1;
+    }
+    .detail-list {
+        height: 1900px;
+    }
+    .design-detail-product {
+        padding-top: 50px;
+    }
 @media only screen and (min-width: 600px) {
     .menu {
         display: none;
