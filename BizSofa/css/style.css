@@ -87,7 +87,7 @@ main {
 .menu {
     width: 336px;
     height: 100%;
-    border: 5px solid #f3f3f3;
+    border: 2px solid #f3f3f3;
     text-align: center;
     position: fixed;
     left: 0;
