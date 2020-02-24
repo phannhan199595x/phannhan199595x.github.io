@@ -518,6 +518,10 @@ main {
         position: unset;
         height: auto;
         padding: 20px;
+        background-color: #f1eff0;
+    }
+    .detail-product .title{
+        width: auto;
     }
     .design-detail-product {
         padding-top: 100px;
@@ -660,6 +664,7 @@ main {
         position: unset;
         height: auto;
         padding: 20px;
+        background-color: #f1eff0;
     }
     .detail-list {
         height: 2300px;
@@ -669,6 +674,9 @@ main {
     }
     .design-detail-product p {
         width: 600x;
+    }
+    .detail-product .title{
+        width: auto;
     }
 }
 /* end tablet responsive */
@@ -802,6 +810,10 @@ main {
         width: auto;
         position: unset;
         height: auto;
+        background-color: #f1eff0;
+    }
+    .detail-product .title {
+        width: auto;
     }
     .overlay {
         opacity: 1;
@@ -812,6 +824,7 @@ main {
     .design-detail-product {
         padding-top: 50px;
     }
+    
 @media only screen and (min-width: 600px) {
     .menu {
         display: none;
