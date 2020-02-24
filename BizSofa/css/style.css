@@ -378,11 +378,13 @@ main {
 .product-details {
     /* visibility: hidden; */
     width: 100%;
-    
 }
-.product-detail
+.product-details hr {
+    width: 30px;
+}
 .product-details .title {
-    border-bottom: 1px solid;
+    text-transform: uppercase;
+    width: 200px;
 }
 /* End trang detail */
 /* Responsive */
