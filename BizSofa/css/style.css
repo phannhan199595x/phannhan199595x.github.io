@@ -621,6 +621,72 @@ main {
     filter: grayscale(100%);
 }
 /* end trang contact */
+/* trang about */
+.container-about {
+    width: 100%;
+    padding: 40px 0px 100px 30px;
+}
+.container-about::before {
+    content: "";
+    clear: both;
+    display: block;
+}
+.container-about::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.about-img {
+    width: 50%;
+    float: left;
+}
+.about-img img {
+    width: 100%;
+}
+.box-about-us {
+    width: 40%;
+    float: left;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    background-color: #51a953;
+    padding: 35px 45px 40px 30px;
+}
+.box-about-us .about-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fefeff;
+}
+.box-about-us p {
+    color: #fefeff;
+    padding-top: 20px;
+}
+.box-about {
+    width: 100%;
+    padding: 0px 35px 0px 30px;
+}
+.box-about::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.box-about h4 {
+    font-size: 25px;
+    font-style: unset;
+}
+.box-about p {
+    padding-top: 30px;
+}
+.box-about-left {
+    width: calc(50% - 25px);
+    float: left;
+    margin-right: 46px;
+}
+.box-about-right {
+    width: calc(50% - 25px);
+    float: left;
+}
+/* end trang about */
 /* Responsive */
 @media only screen and (max-width: 1200px) {
     .about-product .about-product-title {
@@ -654,6 +720,16 @@ main {
         width: 210px;
     }
     .form span {
+        width: 100%;
+    }
+    .container-about {
+        padding-right: 30px;
+    }
+    .about-img {
+        width: 100%;
+    }
+    .box-about-us {
+        position: unset;
         width: 100%;
     }
 }
@@ -752,6 +828,17 @@ main {
         margin-top: 20px;
     }
     /* end contact */
+    .container-about {
+        padding-right: 30px;
+        padding-top: 100px;
+    }
+    .about-img {
+        width: 100%;
+    }
+    .box-about-us {
+        position: unset;
+        width: 100%;
+    }
 }
 /* tablet responsive */
 @media only screen and (max-width: 767px) {
@@ -920,6 +1007,17 @@ main {
         margin-top: 20px;
     }
     /* end contact */
+    .container-about {
+        padding-right: 30px;
+        padding-top: 100px;
+    }
+    .about-img {
+        width: 100%;
+    }
+    .box-about-us {
+        position: unset;
+        width: 100%;
+    }
 }
 /* end tablet responsive */
 /* mobile responsive */
@@ -1068,6 +1166,17 @@ main {
         margin-top: 20px;
     }
     /* end contact */
+    .container-about {
+        padding-right: 30px;
+        padding-top: 100px;
+    }
+    .about-img {
+        width: 100%;
+    }
+    .box-about-us {
+        position: unset;
+        width: 100%;
+    }
     
 @media only screen and (min-width: 600px) {
     .menu {

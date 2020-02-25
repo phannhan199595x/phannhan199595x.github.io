@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/903b12981f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="box-header">
+        <div class="menu-mobile">
+            <div class="logo-mobile">
+                <a href="#"><img src="../images/logo-mobile.png" alt=""></a>
+            </div>
+            <div class="toggle-btn" onclick="toggleSidebar()" id="main">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="side-bar" id="sidebar">
+                <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home page</a>
+                <a href="#">About us</a>
+                <a href="#">Product</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="menu-top">
+                <a href="../html/trangchu.html" class="item">Home Page</a>
+                <a href="" class="item">About Us</a>
+                <a href="../html/category.html" class="item">Product</a>
+                <a href="../html/contact.html" class="item">Contact</a>
+            </div>
+            <div class="menu-bot">
+                <div class="menu-bot-icon">
+                    <a href="#"><img src="../images/icons/facebook-icon.png" alt=""></a>
+                    <a href="#"><img src="../images/icons/twitter-icon.png" alt=""></a>
+                    <a href="#"><img src="../images/icons/googleplus-icon.png" alt=""></a>
+                    <a href="#"><img src="../images/icons/instagram-icon.png" alt=""></a>
+                    <p>2018 &copy; All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container-about">
+            <div class="about-img">
+                <img src="../images/about.jpeg" alt="">
+            </div>
+            <div class="box-about-us">
+                <div class="about-title">
+                    How we do it
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                <p>Read more</p>
+            </div>
+        </div>
+        <div class="box-about">
+            <div class="box-about-left">
+                <h4>Lorem ipsum scelerisque molestie</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+                </p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop.
+                </p>
+            </div>
+            <div class="box-about-right">
+                <h4>Lorem ipsum scelerisque molestie</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+                </p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop.
+                </p>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact-group">
+                <div class="contact-title">
+                    <p>Need to <strong>talk</strong></p>
+                </div>
+                <p>Enter your email and we'll send you a coupon with 10% off your next order</p>
+                <div class="form-control">
+                    <form action="">
+                        <input type="text" class="form-contact" placeholder="Your email address">
+                        <button type="button" class="fas fa-paper-plane btn-icon"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="payment">
+                <a href="#"><img src="../images/icons/paypal.png" alt=""></a>
+                <a href="#"><img src="../images/icons/visa.png" alt=""></a>
+                <a href="#"><img src="../images/icons/mastercard.png" alt=""></a>
+                <a href="#"><img src="../images/icons/discover.png" alt=""></a>
+            </div>
+        </div>
+    </main>
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+            document.getElementById("sidebar").display = "none";
+        }
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
