@@ -10,6 +10,7 @@
     float: left;
 }
 main {
+    width: 100%;
     height: 100%;
     padding-left: 336px;
     float: left;
@@ -227,7 +228,7 @@ main {
     text-align: center;
     padding-top: 126px;
     margin: auto;
-    
+    max-width: 100%;
 }
 .contact-group {
     border-top: 1px solid #f3f3f3;
@@ -265,13 +266,13 @@ main {
     border: 1px solid;
     margin-right: -40px;
 }
-.contact .contact-icon {
+.contact .payment {
     padding-bottom: 83px;
 }
-.contact .contact-icon a {
+.contact .payment a {
     width: 100px;
 }
-.contact .contact-icon img {
+.contact .payment img {
     padding-right: 25px;
     filter: grayscale(100%);
 }
@@ -434,7 +435,12 @@ main {
 /* trang contact */
 .container-contact {
     width: 100%;
-    padding: 90px 172px 90px 62px;
+    padding: 90px 174px 90px 62px;
+}
+.container-contact::before {
+    content: "";
+    clear: both;
+    display: block;
 }
 .container-contact::after {
     content: "";
@@ -480,6 +486,9 @@ main {
     width: 100%;
     height: 54px;
     margin-top: 50px;
+    color: white;
+    background-color: #55a858;
+    border: none;
 }
 .address {
     width: 50%;
@@ -497,6 +506,72 @@ main {
 }
 .address .title-address {
     font-size: 25px;
+}
+.font-icon {
+    max-width: 100%;
+    padding-top: 20px;
+}
+.font-icon::before {
+    content: "";
+    clear: both;
+    display: block;
+}
+.font-icon::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.phone-icon {
+    width: 33.33%;
+    float: left;
+    padding-right: 60px;
+    padding-left: 62px;
+}
+.phone-icon .phone-title {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.phone-icon a {
+    width: 100%;
+}
+.phone-icon a i {
+    font-size: 50px;
+    color: #4fa655;
+    margin-bottom: 40px;
+}
+.envelope-icon {
+    width: 33.33%;
+    float: left;
+    padding-right: 60px;
+}
+.envelope-icon .envelope-title {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.envelope-icon a {
+    width: 100%;
+}
+.envelope-icon a i {
+    font-size: 50px;
+    color: #4fa655;
+    margin-bottom: 40px;
+}
+.map-icon {
+    width: 33.33%;
+    float: left;
+    padding-right: 174px;
+}
+.map-icon .map-title {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.map-icon a {
+    width: 100%;
+}
+.map-icon a i {
+    font-size: 50px;
+    color: #4fa655;
+    margin-bottom: 40px;
 }
 /* end trang contact */
 /* Responsive */
@@ -596,6 +671,26 @@ main {
         width: 700px;
     }
     /* End detail */
+    /* contact */
+    .form {
+        width: 100%;
+    }
+    .address {
+        width: 100%;
+        padding-top: 20px;
+    }
+    .phone-icon {
+        width: 100%;
+        padding: 0;
+    }
+    .envelope-icon {
+        width: 100%;
+    }
+    .map-icon {
+        width: 100%;
+        padding: 0;
+    }
+    /* end contact */
 }
 /* tablet responsive */
 @media only screen and (max-width: 767px) {
