@@ -462,13 +462,12 @@ main {
 }
 .form span {
     display: inline-block;
-    max-width: 100%;
 }
-.form .name span {
+.form .your-name {
     width: calc(50% - 15px);
     margin-right: 26px;
 }
-.form .email span {
+.form .your-email {
     width: calc(50% - 15px);
 }
 .form .name {
