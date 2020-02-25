@@ -150,7 +150,7 @@ main {
     display: block;
 }
 .product-item .product-img img {
-    width: 100%;
+    max-width: 100%;
     padding: 10px 10px 19px 24px;
 }
 .product-item .slides {
@@ -280,6 +280,8 @@ main {
 /* Trang category css */
 /* Main Category */
 .container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     padding-left: 30px;
@@ -310,8 +312,8 @@ main {
 .product {
     background: #f6f6f6;
     padding: 120px 34px 22px 74px;
-    width: 100%;
-    height: 1075px;
+    max-width: 100%;
+    height: 1100px;
 }
 .product h4 {
     text-transform: uppercase;
@@ -421,6 +423,59 @@ main {
     padding-top: 10px;
 }
 /* End trang detail */
+/* trang contact */
+.container-contact {
+    width: 100%;
+    height: 900px;
+    padding: 90px 172px 90px 62px;
+}
+.form {
+    width: 50%;
+    float: left;
+    padding-right: 37px;
+}
+.form .title-contact {
+    font-size: 25px;
+}
+.contact-name {
+    padding-top: 20px;
+}
+.form .name {
+    width: 50%;
+    height: 52px;
+    float: left;
+}
+.form .email {
+    width: 50%;
+    height: 52px;
+    float: left;
+}
+.form .subject {
+    width: 100%;
+    height: 52px;
+    margin-top: 50px;
+}
+.form .message {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+}
+.form .submit {
+    width: 100%;
+    height: 54px;
+    margin-top: 50px;
+}
+.address {
+    width: 50%;
+    float: left;
+}
+.address ul {
+    padding-left: 15px;
+}
+.address .title-address {
+    font-size: 25px;
+}
+/* end trang contact */
 /* Responsive */
 @media only screen and (max-width: 1200px) {
     .about-product .about-product-title {
@@ -499,7 +554,7 @@ main {
         width: 50%;
     }
     .product {
-        height: 1240px;
+        height: 1740px;
     }
     /* detail */
     .detail-product {
