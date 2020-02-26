@@ -151,11 +151,11 @@ main {
     display: block;
 }
 .product-item .product-img img {
-    max-width: 100%;
+    width: 100%;
     padding: 10px 10px 19px 24px;
 }
 .product-item .slides {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: none;
     padding: 10px 19px 19px 12px;
