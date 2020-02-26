@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuerySlider</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="slider.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="slider">
+            <div class="img curry"><img src="./images/avenger.jpg" alt=""></div>
+            <div class="img"><img src="./images/avenger1.jpg" alt=""></div>
+            <div class="img"><img src="./images/dragonball.jpg" alt=""></div>
+            <div class="img"><img src="./images/dragonball2.jpg" alt=""></div>
+            <div class="img"><img src="./images/ironman.jpg" alt=""></div>
+            <div class="img"><img src="./images/naruto.jpg" alt=""></div>
+        </div>
+        <div class="nav">
+            <!-- <div class="prev n"><a href="#">❮</a></div>
+            <div class="next n"><a href="#">❯</a></div> -->
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+        <div class="thumbnails">
+            <div class="thumbnail"><img src="./images/avenger.jpg" alt=""></div>
+            <div class="thumbnail"><img src="./images/avenger1.jpg" alt=""></div>
+            <div class="thumbnail"><img src="./images/dragonball.jpg" alt=""></div>
+            <div class="thumbnail"><img src="./images/dragonball2.jpg" alt=""></div>
+            <div class="thumbnail"><img src="./images/ironman.jpg" alt=""></div>
+            <div class="thumbnail"><img src="./images/naruto.jpg" alt=""></div>
+        </div>
+    </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.next').click(function () {
+                var currentImage = $('.img.curry');
+                var currentImageIndex = $('.img.curry').index();
+                var nextImageIndex = currentImageIndex + 1;
+                var nextImage = $('.img').eq(nextImageIndex);
+                currentImage.fadeOut(1000);
+                currentImage.removeClass('curry');
+                if (nextImageIndex == ($('.img:last').index() + 1)) {
+                    $('.img').eq(0).fadeIn(1000);
+                    $('.img').eq(0).addClass('curry');
+                } else {
+                    nextImage.fadeIn(1000);
+                    nextImage.addClass('curry');
+                }
+            });
+            $('.prev').click(function () {
+                var currentImage = $('.img.curry');
+                var currentImageIndex = $('.img.curry').index();
+                var prevImageIndex = currentImageIndex - 1;
+                var prevImage = $('.img').eq(prevImageIndex);
+
+                currentImage.fadeOut(1000);
+                currentImage.removeClass('curry');
+                prevImage.fadeIn(1000);
+                prevImage.addClass('curry');
+            });
+        })
+    </script>
+</body>
+
+</html>
