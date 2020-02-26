@@ -685,6 +685,12 @@ main {
     width: calc(50% - 25px);
     float: left;
 }
+.box-about .box-about-left .box-title {
+    font-size: 20px;
+}
+.box-about .box-about-right .box-title {
+    font-size: 20px;
+}
 /* end trang about */
 /* Responsive */
 @media only screen and (max-width: 1200px) {
