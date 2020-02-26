@@ -852,6 +852,9 @@ main {
         padding: 20px;
         background-color: #f1eff0;
     }
+    .detail-list .detail-box {
+        position: unset;
+    }
     .design-detail-product {
         padding-top: 100px;
     }
