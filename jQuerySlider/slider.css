@@ -77,3 +77,26 @@ body {
 .cursor {
     cursor: pointer;
 }
+.wrapper {
+    width: 50%;
+    position: relative;
+    transform: translateX(50%);
+}
+.img {
+    display: none;
+}
+.thumbnails::after {
+    display: table;
+    clear: both;
+}
+.slider .img img {
+    max-width: 100%;
+}
+.thumbnails {
+    max-width: 100%;
+}
+.thumbnail {
+    content: "";
+    float: left;
+    width: 16.66%;
+}

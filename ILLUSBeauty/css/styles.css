@@ -72,3 +72,10 @@ option {
     text-align: center;
     text-align-last: center;
 }
+.nav>li {
+    position: relative;
+    display: block;
+}
+.navbar .navbar-nav > li:first-child > a {
+    padding-left: 0;
+}
