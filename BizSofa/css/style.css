@@ -947,6 +947,9 @@ main {
         padding: 20px;
         background-color: #f1eff0;
     }
+    .detail-list .detail-box {
+        width: 50%;
+    }
     .design-detail-product {
         padding-top: 40px;
     }
@@ -1146,6 +1149,9 @@ main {
     }
     .detail-product .text {
         font-size: 10px;
+    }
+    .detail-list .detail-box {
+        width: 100%;
     }
     .box-about-us {
         position: unset;
