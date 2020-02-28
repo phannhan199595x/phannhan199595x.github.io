@@ -9,6 +9,12 @@
 .navbar {
     padding: 0;
 }
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
 .top-header {
     position: relative;
     text-align: center;
@@ -42,7 +48,7 @@
 }
 .top-header p {
     display: inline;
-    margin: 0;
+    margin: auto;
     font-size: 12.5px;
     font-weight: 500;
     letter-spacing: 2.1px;
@@ -88,6 +94,7 @@ img {
 .navbar .navbar-header {
     position: relative;
     width: 1822px;
+    height: 55px;
     margin-left: -15px !important;
     margin-right: -15px !important;
 }
@@ -281,6 +288,51 @@ li.dropdown.active {
     clear: both;
     display: table;
 }
+.index-page.page-content {
+    margin-top: 0;
+    padding-top: 129px;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+.home-slider .owl-nav .owl-prev {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin-top: -15px;
+}
+.home-slider .owl-nav .owl-next {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin-top: -15px;
+}
+.owl-nav .owl-prev::before {
+    content: url(../images/icons/prev-slider.png);
+}
+.owl-nav .owl-next::after {
+    content: url(../images/icons/next-slider.png);
+}
+.owl-carousel .owl-item img {
+    width: 100%;
+}
+.visible-xs {
+    display: none !important;
+}
+.home-slider .owl-item .cta-box {
+    background-color: #f3f2ed;
+}
+.site-btn-black {
+    color: #fff !important;
+    text-align: center;
+    background-color: #000;
+    padding: 5px 37px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    transition: 0.3s;
+    letter-spacing: 3px;
+}
 @media (max-width: 1199px) and (min-width: 992px) {
     .hidden-md {
         display: none !important;
@@ -308,11 +360,17 @@ li.dropdown.active {
         border-radius: 0px;
         box-shadow: none;
     }
+    .navbar-toggle {
+        display: none;
+    }
 }
 @media only screen and (max-width: 991px) {
     * {
         margin: 0;
         padding: 0;
+    }
+    .navbar-header {
+        float: none;
     }
     .top-header .container-fluid {
         padding-top: 9px;
@@ -329,11 +387,19 @@ li.dropdown.active {
         font-size: 13px;
         font-weight: 500;
     }
+    .navbar-toggle {
+        display: block;
+        margin-left: 10px;
+    }
+    
+}
+@media only screen and (min-width: 768px){
+    .home-slider .owl-nav{
+        visibility: hidden;
+    }
 }
 @media (min-width: 768px) {
-    .navbar-toggle {
-        display: none;
-    }
+    
     .navbar-nav>li {
         float: left;
     }
@@ -346,6 +412,15 @@ li.dropdown.active {
     }
 }
 @media (max-width: 767px) {
+    .top-header p {
+        font-size: 12px;
+        height: 17px;
+        overflow: hidden;
+        display: block;
+        padding: 0 5px;
+        letter-spacing: 2.5px;
+        text-align: center;
+    }
     .navbar-header {
         height: 63px;
         border-bottom: 1px solid #f3f3f3;
@@ -355,5 +430,56 @@ li.dropdown.active {
     }
     .navbar .navbar-toggle {
         margin-top: 16px;
+    }
+    .index-page.page-content {
+        padding-top: 100px;
+        margin-bottom: 70px;
+    }
+    .home-slider .owl-item .img-desktop {
+        display: none;
+    }
+    .visible-xs {
+        display: block !important;
+    }
+    .home-slider .owl-item .cta-box .cta-content {
+        background: #f3f2ed;
+    }
+    .home-slider .owl-item .cta-box .cta-content strong {
+        font-size: 15px;
+        font-weight: 500 !important;
+        letter-spacing: 2.8px;
+        color: #ff7372;
+    }
+    .home-slider .owl-item .cta-box .cta-content h3 {
+        font-size: 34.8px !important;
+        margin-top: 8px;
+        line-height: 40px;
+    }
+    .home-slider .owl-item .cta-box .cta-content p {
+        margin-bottom: 27px;
+        font-size: 16px;
+        line-height: 23px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        padding: 0 35px;
+    }
+    .home-slider .owl-item .cta-box .cta-content .site-btn-black {
+        padding: 11px 15px;
+        font-size: 14px;
+        display: inline-block;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .home-slider .owl-nav .owl-prev {
+        top: 28%;
+        left: 0;
+    }
+    .home-slider .owl-nav .owl-next {
+        top: 28%;
+        right: 0;
+    }
+    .home-slider .owl-item .cta-box .cta-content {
+        text-align: center;
+        padding: 26px 20px 36px;
     }
 }

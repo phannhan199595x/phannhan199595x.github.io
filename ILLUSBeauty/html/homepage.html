@@ -4,10 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/903b12981f.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="../js/owl.carousel.min.js"></script>
     <title>ILLUS Beauty</title>
 </head>
 
@@ -37,9 +43,9 @@
                         </li>
                         <span>|</span>
                         <li>
-                            <select name="" id="">
-                                <option value="">EN</option>
-                                <option value="">VI</option>
+                            <select class="navbar-language-select" data-with="fit" onchange="location=this.value">
+                                <option value="" data-content="English">EN</option>
+                                <option value="" data-content="Vietnamese">VI</option>
                             </select>
                         </li>
                     </ul>
@@ -135,16 +141,101 @@
             </div>
         </div>
     </nav>
+    <div class="page-content index-page" id="index-page">
+        <div class="home-slider owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">
+                        <a href="">
+                            <img src="../images/slider/slider-1.png" alt="" class="img-desktop">
+                            <img src="../images/index/slider2.jpg" alt="" class="visible-xs laziload">
+                        </a>
+                        <div class="cta-box visible-xs">
+                            <div class="cta-content">
+                                <strong>New!</strong>
+                                <h3>
+                                    Bubble foam cleaner
+                                </h3>
+                                <p>
+                                    Organic Jasmine Water is infused with oil - reducing antioxidant rich Green Tea.
+                                </p>
+                                <a href="" class="site-btn-black">SHOP NOW!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <a href="">
+                            <img src="../images/slider/slider-1.png" alt="" class="img-desktop">
+                            <img src="../images/index/slider2.jpg" alt="" class="visible-xs laziload">
+                        </a>
+                        <div class="cta-box visible-xs">
+                            <div class="cta-content">
+                                <strong>New!</strong>
+                                <h3>
+                                    Bubble foam cleaner
+                                </h3>
+                                <p>
+                                    Organic Jasmine Water is infused with oil - reducing antioxidant rich Green Tea.
+                                </p>
+                                <a href="" class="site-btn-black">SHOP NOW!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <a href="">
+                            <img src="../images/slider/slider-1.png" alt="" class="img-desktop">
+                            <img src="../images/index/slider2.jpg" alt="" class="visible-xs laziload">
+                        </a>
+                        <div class="cta-box visible-xs">
+                            <div class="cta-content">
+                                <strong>New!</strong>
+                                <h3>
+                                    Bubble foam cleaner
+                                </h3>
+                                <p>
+                                    Organic Jasmine Water is infused with oil - reducing antioxidant rich Green Tea.
+                                </p>
+                                <a href="" class="site-btn-black">SHOP NOW!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-nav">
+                <button type="button" role="presentation" class="owl-prev"></button>
+                <button type="button" role="presentation" class="owl-next"></button>
+            </div>
+        </div>
+    </div>
     <!-- End header -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <!-- Script -->
+    <script>
+        $(document).ready(function () {
+            $(".home-slider").owlCarousel();
+        });
+        $('.home-slider').owlCarousel({
+            loop: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            margin: 0,
+            nav: true,
+            responsiveClass: true,
+            items: 1,
+            navText: ["", ""],
+            rewindNav: true,
+            nav: true,
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <!-- End Script -->
 </body>
 
 </html>
