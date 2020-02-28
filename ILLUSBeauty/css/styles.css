@@ -263,9 +263,17 @@ li.dropdown.active {
     width: 53px;
     height: 48px;
 }
-.navbar-left::before {
+.navbar-collapse::before {
+    content: "";
+    display: table;
+}
+.navbar-collapse::after {
     content: "";
     clear: both;
+    display: table;
+}
+.navbar-left::before {
+    content: "";
     display: table;
 }
 .navbar-left::after {
