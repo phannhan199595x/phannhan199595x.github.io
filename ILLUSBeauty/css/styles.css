@@ -259,6 +259,20 @@ ul {
 a {
     text-decoration: none;
 }
+li.dropdown.active {
+    width: 53px;
+    height: 48px;
+}
+.navbar-left::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+.navbar-left::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 @media (max-width: 1199px) and (min-width: 992px) {
     .hidden-md {
         display: none !important;
@@ -317,6 +331,10 @@ a {
     }
     .navbar-left {
         float: left !important;
+    }
+    .navbar-collapse.collapse {
+        padding-bottom: 0;
+        overflow: visible !important;
     }
 }
 @media (max-width: 767px) {
