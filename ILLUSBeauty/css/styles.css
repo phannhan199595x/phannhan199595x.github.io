@@ -72,11 +72,100 @@ option {
     text-align: center;
     text-align-last: center;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+.navbar .navbar-collapse {
+    max-height: 90%;
+}
+.navbar .navbar-header {
+    position: relative;
+    width: 1822px;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
+.navbar .navbar-toggle {
+    float: left;
+    border: 0px;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+    margin-bottom: 5px;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+.navbar-header .left-section {
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar-header .left-section .navbar-search {
+    font-size: 21px;
+}
+.navbar-header .right-section {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar-header .right-section .navbar-cart {
+    font-size: 20px;
+    margin-right: 5px;
+    position: relative;
+}
+select.navbar-language-select {
+    -webkit-appearance: none;
+    text-decoration: underline;
+    text-decoration-color: #656565;
+    font-weight: bold;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 5px;
+    outline: 0px !important;
+    background-image: none !important;
+    padding-right: 0;
+    margin-left: 5px;
+    text-align: center;
+    text-align-last: center;
+}
+.option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+select .navbar-language-select option {
+    text-align: center;
+    text-align-last: center;
+}
+.navbar-search {
+    color: #000;
 }
 .navbar .navbar-brand {
     position: absolute;
@@ -87,12 +176,21 @@ option {
     font-weight: bold;
     padding: 14px 10px 10px;
 }
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navbar .navbar-brand img {
+    max-height: 100%;
+}
 #navbar-expand {
     max-width: 1784px;
     width: 100%;
     margin: 0 auto;
     padding-left: 40px;
-    display: block;
 }
 .navbar .navbar-collapse ul {
     padding-top: 15px;
@@ -104,20 +202,44 @@ option {
 .navbar .navbar-nav > li:first-child > a {
     padding-left: 0;
 }
+#navbar-expand ul.dropdown-menu {
+    border: none;
+    padding: 0;
+    padding-top: 17px;
+}
 #navbar-expand .navbar-nav .dropdown .dropdown-menu {
-    display: none;
+    display: block;
     visibility: hidden;
     opacity: 0;
+}
+#navbar-expand ul.dropdown-menu .box-border-menu {
+    height: 100%;
+    border: solid 1px #e4e4e4;
+    padding: 33px 30px 45px 37px;
+}
+.dropdown-menu {
+    position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    /* display: none; */
+    float: left;
+    min-width: 160px;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
 }
 ul {
     display: block;
 }
 .nav {
     padding-left: 0;
+    margin-bottom: 0;
     list-style: none;
-}
-.navbar-nav>li {
-    float: left;
 }
 .navbar-left {
     float: left !important;
@@ -136,4 +258,76 @@ ul {
 }
 a {
     text-decoration: none;
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #navbar-expand {
+        display: block !important;
+    }
+    .navbar .navbar-collapse {
+        height: 80px !important;
+    }
+    .navbar .navbar-collapse ul {
+        padding-top: 15px;
+    }
+    #navbar-expand ul.dropdown-menu {
+        top: 48px;
+        left: -20px;
+        width: 992px;
+        padding-top: 70px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        border: solid 1px #ddd;
+        border-top: none;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+}
+@media only screen and (max-width: 991px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .top-header .container-fluid {
+        padding-top: 9px;
+    }
+    .top-header .right-section, .top-header .left-section {
+        display: none;
+    }
+    .navbar .navbar-toggle.collapsed + * + div.right-section {
+        opacity: 1;
+        transition: 0.3s;
+        margin-right: 20px;
+    }
+    select.navbar-language-select {
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+@media (min-width: 768px) {
+    .navbar-toggle {
+        display: none;
+    }
+    .navbar-nav>li {
+        float: left;
+    }
+    .navbar-left {
+        float: left !important;
+    }
+}
+@media (max-width: 767px) {
+    .navbar-header {
+        height: 63px;
+        border-bottom: 1px solid #f3f3f3;
+    }
+    .navbar .navbar-brand {
+        top: 43px;
+    }
+    .navbar .navbar-toggle {
+        margin-top: 16px;
+    }
 }

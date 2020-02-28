@@ -50,7 +50,29 @@
             <a class="navbar-brand" href="">
                 <img src="../images/logo.jpg" alt="">
             </a>
-            <div class="navbar-header"></div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapsed" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="left-section hidden-md hidden-lg">
+                    <a class="navbar-search" href="" id="open-search-btn-mobile">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <div class="right-section hidden-md hidden-lg">
+                    <a href="" class="navbar-cart">
+                        <img src="../images/shopping-bag.png" alt="">
+                        <span class="number-p"></span>
+                    </a>
+                    <select class="navbar-language-select" data-with="fit" onchange="location=this.value">
+                        <option value="" data-content="English">EN</option>
+                        <option value="" data-content="Vietnamese">VI</option>
+                    </select>
+                </div>
+            </div>
             <div class="collapse navbar-collapse" id="navbar-collapse"></div>
             <div class="collapse navbar-collapse" id="navbar-expand">
                 <ul class="nav navbar-nav navbar-left">
