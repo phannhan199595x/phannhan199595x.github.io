@@ -376,6 +376,31 @@ li.dropdown.active {
 .section-3 {
     margin-top: 27px;
 }
+.section-header {
+    text-align: center;
+    margin: 50px 0px;
+}
+.home-prod-showcase .prod-showcase {
+    padding-top: 16px;
+}
+.home-prod-showcase .section-header h3 {
+    font-size: 40px;
+}
+.home-prod-showcase .prod-showcase-slider .owl-nav .owl-prev {
+    position: absolute;
+    top: 35%;
+    margin-top: -18px;
+    left: -30px;
+}
+.home-prod-showcase .prod-showcase-slider .owl-nav .owl-next {
+    position: absolute;
+    top: 35%;
+    margin-top: -18px;
+    right: -30px;
+}
+.prod-showcase .prod-showcase-slider {
+    margin: 0 auto;
+}
 @media (max-width: 1199px) and (min-width: 992px) {
     .hidden-md {
         display: none !important;
@@ -535,6 +560,9 @@ li.dropdown.active {
         padding: 11px 15px;
         font-size: 14px;
         display: inline-block;
+    }
+    .section-2 {
+        display: block;
     }
     .section-2 .box-content {
         position: relative;

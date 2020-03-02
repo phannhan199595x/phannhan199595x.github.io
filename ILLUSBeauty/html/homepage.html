@@ -229,6 +229,77 @@
                 </a>
             </div>
         </div>
+        <section class="home-prod-showcase">
+            <div class="section-header">
+                <h3>Cause you love it</h3>
+            </div>
+            <div class="container prod-showcase hidden-xs">
+                <div class="prod-showcase-slider owl-carousel owl-rtl owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item">
+                                <a href="">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="../images/shop/prod-1.jpg" alt="" class="img-desktop">
+                                            <img src="../images/shop/prod-5.jpg" alt="" class="img-hover">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="../images/shop/prod-2.jpg" alt="" class="img-desktop">
+                                            <img src="../images/shop/prod-6.jpg" alt="" class="img-hover">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="../images/shop/prod-3.jpg" alt="" class="img-desktop">
+                                            <img src="../images/shop/prod-7.jpg" alt="" class="img-hover">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="../images/shop/prod-4.jpg" alt="" class="img-desktop">
+                                            <img src="../images/shop/prod-2.jpg" alt="" class="img-hover">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="owl-item">
+                                <a href="">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="../images/shop/prod-1.jpg" alt="" class="img-desktop">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="../images/shop/prod-2.jpg" alt="" class="img-desktop">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="../images/shop/prod-3.jpg" alt="" class="img-desktop">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="../images/shop/prod-4.jpg" alt="" class="img-desktop">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="owl-item">
+                                <a href="">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="../images/shop/prod-1.jpg" alt="" class="img-desktop">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="../images/shop/prod-2.jpg" alt="" class="img-desktop">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="../images/shop/prod-3.jpg" alt="" class="img-desktop">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="../images/shop/prod-4.jpg" alt="" class="img-desktop">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <!-- End header -->
     <!-- Script -->
@@ -237,6 +308,21 @@
             $(".home-slider").owlCarousel();
         });
         $('.home-slider').owlCarousel({
+            loop: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            margin: 0,
+            nav: true,
+            responsiveClass: true,
+            items: 1,
+            navText: ["", ""],
+            rewindNav: true,
+            nav: true,
+        })
+        $(document).ready(function () {
+            $(".prod-showcase-slider").owlCarousel();
+        });
+        $('.prod-showcase-slider').owlCarousel({
             loop: true,
             autoplay: false,
             autoplayTimeout: 5000,
