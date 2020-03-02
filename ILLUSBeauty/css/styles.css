@@ -732,9 +732,55 @@ li.dropdown.active {
 .home-about .section-body .item p {
     font-size: 17px;
 }
+.clearfix::before {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.section-about-slider {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+.about-slider .item .card {
+    width: 680px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    border: none;
+}
+.about-slider .item .card .box-img {
+    max-width: 469px;
+    margin: 0 auto;
+}
+.about-slider .item .card .card-info {
+    text-align: center;
+    font-family: "Lora";
+    font-size: 34px;
+    margin-top: 44px;
+}
+.owl-thumb-item {
+    border: 0px;
+    background: none;
+    opacity: 0.4;
+    outline: 0px;
+    padding-bottom: 20px;
+}
+.owl-thumb-item.active {
+    opacity: 1;
+}
 @media (max-width: 1199px) {
     .home-about .section-top .bg-text {
         font-size: 88px;
+    }
+}
+@media only screen and (max-width:1199px) {
+    .section-about-slider {
+        margin-top: 33px;
     }
 }
 @media (max-width: 1199px) and (min-width: 992px) {
@@ -856,6 +902,27 @@ li.dropdown.active {
         margin-bottom: 17px;
         font-weight: 500;
         font-size: 15px;
+    }
+    .about-slider .item .card .box-img {
+        height: 340px;
+    }
+    .about-slider .item .card .card-info .card-desc p {
+        font-size: 35px;
+        line-height: 42px;
+    }
+    .section-about-slider .owl-thumbs {
+        width: 100%;
+    }
+    .owl-thumbs {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .section-about-slider .owl-thumbs .owl-thumb-item {
+        width: calc(25% - 10px);
+        display: inline-block;
+        padding: 0 5px;
+        padding-bottom: 30px;
     }
 }
 @media (max-width: 767px) {

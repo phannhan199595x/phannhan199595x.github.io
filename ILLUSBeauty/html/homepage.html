@@ -1126,7 +1126,7 @@
         <section class="home-about">
             <div class="section-top container-fluid">
                 <div class="container">
-                    <p class="bg-text">About us</p>
+                    <p class="bg-text">about us</p>
                     <div class="section-header">
                         <h3>
                             A beauty brand inspired by real life
@@ -1151,6 +1151,91 @@
                     </div>
                 </div>
             </div>
+            <div class="clearfix"></div>
+            <div class="container">
+                <div class="section-about-slider">
+                    <div class="about-slider owl-carousel owl-theme owl-loaded owl-drag" data-slider-id="1">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <div class="owl-item">
+                                    <div class="item">
+                                        <div class="card">
+                                            <div class="box-img">
+                                                <img src="../images/index/about-slider-1.jpg" alt="">
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-desc">
+                                                    <p>"Accessible, affordable products that feel luxurious without
+                                                        being frou-frou" 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="item">
+                                        <div class="card">
+                                            <div class="box-img">
+                                                <img src="../images/index/about-slider-1.jpg" alt="">
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-desc">
+                                                    <p>"Accessible, affordable products that feel luxurious without
+                                                        being frou-frou" 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="item">
+                                        <div class="card">
+                                            <div class="box-img">
+                                                <img src="../images/index/about-slider-1.jpg" alt="">
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-desc">
+                                                    <p>"Accessible, affordable products that feel luxurious without
+                                                        being frou-frou" 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="item">
+                                        <div class="card">
+                                            <div class="box-img">
+                                                <img src="../images/index/about-slider-1.jpg" alt="">
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-desc">
+                                                    <p>"Accessible, affordable products that feel luxurious without
+                                                        being frou-frou" 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-thumbs" data-slider-id="1">
+                            <button class="owl-thumb-item active">
+                                <img src="../images/index/elle.png" alt="">
+                            </button>
+                            <button class="owl-thumb-item">
+                                <img src="../images/index/dep.png" alt="">
+                            </button>
+                            <button class="owl-thumb-item">
+                                <img src="../images/index/vogue.png" alt="">
+                            </button>
+                            <button class="owl-thumb-item">
+                                <img src="../images/index/cosmo.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
     <!-- End header -->
@@ -1170,7 +1255,7 @@
             navText: ["", ""],
             rewindNav: true,
             nav: true,
-        })
+        });
         $(document).ready(function () {
             $(".prod-showcase-slider").owlCarousel();
         });
@@ -1185,7 +1270,7 @@
             navText: ["", ""],
             rewindNav: true,
             nav: true,
-        })
+        });
         $(document).ready(function () {
             $(".testimonial-slider").owlCarousel();
         });
@@ -1200,7 +1285,25 @@
             navText: ["", ""],
             rewindNav: true,
             nav: true,
-        })
+        });
+        $(document).ready(function () {
+            $(".about-slider").owlCarousel();
+        });
+        $('.about-slider').owlCarousel({
+            loop: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            margin: 0,
+            responsiveClass: true,
+            items: 1,
+            navText: ["", ""],
+            rewindNav: true,
+            nav: false,
+            dots: false,
+            thumbs: true,
+            thumbsPrerendered: true
+        });
+
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
