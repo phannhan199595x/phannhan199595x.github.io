@@ -198,9 +198,11 @@ select .navbar-language-select option {
     width: 100%;
     margin: 0 auto;
     padding-left: 40px;
+    position: absolute;
 }
 .navbar .navbar-collapse ul {
     padding-top: 15px;
+    display: block;
 }
 .nav>li {
     position: relative;
@@ -773,6 +775,28 @@ li.dropdown.active {
 .owl-thumb-item.active {
     opacity: 1;
 }
+.home-gallery .gallery-showcase-mobile {
+    margin-bottom: 45px;
+}
+.home-gallery .gallery-showcase {
+    margin-bottom: 38px;
+}
+.home-gallery a.site-btn-white {
+    font-size: 13px;
+    border: solid 2px #333;
+    padding: 9px 15px;
+    font-weight: 500;
+}
+.site-btn-white {
+    color: #000 !important;
+    background-color: #fff;
+    outline: 0px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    width: 150px;
+    display: inline-block;
+}
 @media (max-width: 1199px) {
     .home-about .section-top .bg-text {
         font-size: 88px;
@@ -791,6 +815,9 @@ li.dropdown.active {
 @media (min-width: 992px) {
     .container {
         width: 900px;
+    }
+    .navbar .navbar-header {
+        display: none;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -826,6 +853,9 @@ li.dropdown.active {
     }
     .navbar-header .left-section {
         left: 67px;
+    }
+    .navbar .navbar-header {
+        display: block;
     }
 }
 @media only screen and (max-width: 991px) {
