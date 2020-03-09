@@ -97,6 +97,7 @@ img {
     height: 55px;
     margin-left: -15px !important;
     margin-right: -15px !important;
+    background-color: #fff;
 }
 .navbar .navbar-toggle {
     float: left;
@@ -381,6 +382,9 @@ li.dropdown.active {
 .section-header {
     text-align: center;
     margin: 50px 0px;
+}
+.page-content {
+    margin-bottom: 71px;
 }
 .home-prod-showcase .prod-showcase {
     padding-top: 16px;
@@ -775,6 +779,17 @@ li.dropdown.active {
 .owl-thumb-item.active {
     opacity: 1;
 }
+.home-gallery .section-header p {
+    letter-spacing: 0.9px;
+    line-height: 1.6;
+    font-size: 16px;
+    width: 560px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .home-gallery .gallery-showcase-mobile {
     margin-bottom: 45px;
 }
@@ -797,6 +812,111 @@ li.dropdown.active {
     width: 150px;
     display: inline-block;
 }
+.home-gallery .gallery {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.home-gallery .section-body .card {
+    padding: 2px 2px 3px;
+}
+.home-gallery .section-body .card .card-img {
+    width: 100%;
+    padding-top: 100%;
+}
+.card-img {
+    position: relative;
+    height: 0;
+}
+.home-gallery .section-body .card .card-desc-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.home-gallery .section-body .card .card-desc-overlay:hover {
+    display: block;
+}
+/* footer */
+footer .invite-bar {
+    background-color: #ffe2de;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    height: 74px;
+}
+footer .invite-bar p {
+    display: inline-block;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+}
+footer .footer-main .footer-faq {
+    padding-top: 28px;
+}
+footer .footer-main .footer-faq .faq-section ul {
+    padding-left: 0;
+}
+footer .footer-main .footer-faq .faq-section ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: 40%;
+    float: left;
+    padding: 7px 10px;
+}
+footer .footer-main .footer-faq .faq-section ul li a {
+    color: #111;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.9px;
+}
+.clear-both {
+    clear: both;
+}
+footer .footer-main .social-icon {
+    margin-top: 74px;
+}
+footer .footer-main .social-icon span {
+    text-transform: uppercase;
+    font-weight: bold;
+    float: left;
+    height: 40px;
+    line-height: 42px;
+    margin-left: 16px;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+}
+footer .footer-main .social-icon ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: 42px;
+    float: left;
+    text-align: center;
+}
+footer .footer-main .social-icon ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+footer .footer-main .social-icon ul li a {
+    text-decoration: none;
+    display: block;
+}
+footer .footer-main .social-icon ul li a i {
+    color: #000;
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: 0.4s;
+}
+/* end footer */
 @media (max-width: 1199px) {
     .home-about .section-top .bg-text {
         font-size: 88px;
