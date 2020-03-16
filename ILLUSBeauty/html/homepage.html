@@ -4,18 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../themes/slick.css">
-    <!-- <script src="/node_modules/owl.carousel2.thumbs/dist/owl.carousel2.thumbs.min.js"></script> -->
     <link rel="stylesheet" href="../css/styles.css">
-    <script src="https://kit.fontawesome.com/903b12981f.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="../js/owl.carousel.min.js"></script>
+
     <title>ILLUS Beauty</title>
 </head>
 
@@ -81,7 +77,57 @@
                     </select>
                 </div>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse"></div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <div class="collapse navbar-collapse" id="navbar-collapsed">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <div class="user-menu-mobile-guest">
+                                <div class="user-avatar-small">
+                                    <img src="../images/guest.png" alt="">
+                                </div>
+                                <div class="user-name">
+                                    <a href="/en/login" id="login_customer_mobile">
+                                        Đăng nhập
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown active">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="">Shop
+                                <span class="dropdown-status"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">Bestseller</a>
+                                </li>
+                                <li>
+                                    <a href="">Special Offers</a>
+                                </li>
+                                <li>
+                                    <a href="">Skincare</a>
+                                </li>
+                                <li>
+                                    <a href="">Body &amp; Bath</a>
+                                </li>
+                                <li>
+                                    <a href="">Makeup</a>
+                                </li>
+                                <li>
+                                    <a href="">Gift sets</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="collapse navbar-collapse" id="navbar-expand">
                 <ul class="nav navbar-nav navbar-left">
                     <li class="dropdown active">
@@ -93,7 +139,7 @@
                             <div class="box-border-menu">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="shop-menu-1 col-xs-2">
+                                        <div class="shop-menu-1 col-2">
                                             <li>
                                                 <a href="">Bestseller</a>
                                             </li>
@@ -101,12 +147,12 @@
                                                 <a href="">Special Offers</a>
                                             </li>
                                         </div>
-                                        <div class="shop-menu-2 col-xs-3">
+                                        <div class="shop-menu-2 col-3">
                                             <li>
                                                 <a href="">Skin care</a>
                                             </li>
                                             <li>
-                                                <a href="">Body & Bath</a>
+                                                <a href="">Body &amp; Bath</a>
                                             </li>
                                             <li>
                                                 <a href="">Make up</a>
@@ -118,10 +164,10 @@
                                                 <a href="">Shop all</a>
                                             </li>
                                         </div>
-                                        <div class="shop-menu-3 col-xs-7">
+                                        <div class="shop-menu-3 col-7">
                                             <div class="shop-menu-box">
                                                 <a href="">
-                                                    <img src="../images/about/about-us-bk.jpg" alt="">
+                                                    <img src="../images/about/about-us-bk.jpg" alt="banner">
                                                 </a>
                                             </div>
                                         </div>
@@ -142,70 +188,71 @@
                 </ul>
             </div>
         </div>
-    </nav>
-    <div class="page-content index-page" id="index-page">
-        <div class="home-slider owl-carousel owl-theme owl-loaded">
-            <div class="owl-stage-outer">
-                <div class="owl-stage">
-                    <div class="owl-item">
-                        <a href="">
-                            <img src="../images/slider/slider-1.png" alt="" class="img-desktop">
-                            <img src="../images/index/slider2.jpg" alt="" class="visible-xs laziload">
+        <div class="header-add-to-cart">
+            <div class="btn-close-cart"></div>
+            <div class="container c-container">
+                <div class="col-sm-6 c-left">
+                    <div class="c-prod-img">
+                        <a href="#" class="box-img">
+                            <!-- <img src="../images/shop/prod-2.jpg" alt=""> -->
                         </a>
-                        <div class="cta-box visible-xs">
-                            <div class="cta-content">
-                                <strong>New!</strong>
-                                <h3>
-                                    Bubble foam cleaner
-                                </h3>
-                                <p>
-                                    Organic Jasmine Water is infused with oil - reducing antioxidant rich Green Tea.
-                                </p>
-                                <a href="" class="site-btn-black">SHOP NOW!</a>
-                            </div>
-                        </div>
                     </div>
-                    <div class="owl-item">
-                        <a href="">
-                            <img src="../images/slider/slider-1.png" alt="" class="img-desktop">
-                            <img src="../images/index/slider2.jpg" alt="" class="visible-xs laziload">
-                        </a>
-                        <div class="cta-box visible-xs">
-                            <div class="cta-content">
-                                <strong>New!</strong>
-                                <h3>
-                                    Bubble foam cleaner
-                                </h3>
-                                <p>
-                                    Organic Jasmine Water is infused with oil - reducing antioxidant rich Green Tea.
-                                </p>
-                                <a href="" class="site-btn-black">SHOP NOW!</a>
-                            </div>
-                        </div>
+                    <div class="c-prod-info">
+                        <p class="c-noti"></p>
+                        <h5 class="c-title"></h5>
+                        <p class="c-desc"></p>
+                        <p class="c-size"></p>
                     </div>
-                    <div class="owl-item">
-                        <a href="">
-                            <img src="../images/slider/slider-1.png" alt="" class="img-desktop">
-                            <img src="../images/index/slider2.jpg" alt="" class="visible-xs laziload">
-                        </a>
-                        <div class="cta-box visible-xs">
-                            <div class="cta-content">
-                                <strong>New!</strong>
-                                <h3>
-                                    Bubble foam cleaner
-                                </h3>
-                                <p>
-                                    Organic Jasmine Water is infused with oil - reducing antioxidant rich Green Tea.
-                                </p>
-                                <a href="" class="site-btn-black">SHOP NOW!</a>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-sm-6 c-right">
+                    <div class="c-sub-total">
+                        Tạm tính <span class="total-price"></span>
+                    </div>
+                    <div class="c-box-btn">
+                        <a href="javascript:;" class="continue-btn">
+                            Tiếp tục mua hàng</a>
+                        <a href="/en/gio-hang" class="btn-checkout">Đến giỏ hàng (0)</a>
                     </div>
                 </div>
             </div>
-            <div class="owl-nav">
-                <button type="button" role="presentation" class="owl-prev"></button>
-                <button type="button" role="presentation" class="owl-next"></button>
+        </div>
+    </nav>
+    <div class="search-form" id="navbar-search-form" data-url="">
+        <form id="search-header-form" action="javascript:;">
+            <div class="col-xs-12 col-sm-5">
+                <label for="">I&#039;m looking for</label>
+            </div>
+            <input type="hidden" name="type" value="product">
+            <div class="input-group col-xs-12 col-sm-7">
+                <input type="product" placeholder="Tìm kiếm" name="q">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </form>
+        <span class="close-btn" id="close-search-btn">
+            <i class="fa fa-times"></i>
+        </span>
+    </div>
+    <div class="page-content index-page" id="index-page">
+        <div class="home-slider owl-carousel owl-theme">
+            <div class="item">
+                <a class="" href="#1">
+                    <img class="img-desktop" src="../images/slider/slider-1.png" alt="img">
+                    <img class="visible-xs laziload" src="../images/index/slider2.jpg" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a class="" href="">
+                    <img class="img-desktop" src="../images/slider/slider-1.png" alt="img">
+                    <img class="visible-xs laziload" src="../images/index/slider2.jpg" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a class="" href="">
+                    <img class="img-desktop" src="../images/slider/slider-1.png" alt="img">
+                    <img class="visible-xs laziload" src="../images/index/slider2.jpg" alt="">
+                </a>
             </div>
         </div>
         <div class="container">
@@ -233,743 +280,165 @@
         </div>
         <section class="home-prod-showcase">
             <div class="section-header">
-                <h3>Cause you love it</h3>
+                <h3>Cause you love it!</h3>
             </div>
             <div class="container prod-showcase hidden-xs">
-                <div class="prod-showcase-slider owl-carousel owl-rtl owl-loaded owl-drag">
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage">
-                            <div class="owl-item">
-                                <div>
-                                    <div class="prod-item prod-item_desk">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <a href="" class="prod-img">
-                                                    <img src="../images/shop/prod-1.jpg" alt="" class="img-desktop">
-                                                    <img src="../images/shop/prod-5.jpg" alt="" class="img-hover">
-                                                </a>
-                                                <a href="" class="prod-title">Bamboo Charcoal</a>
-                                                <p class="prod-desc">hydrating treatment</p>
-                                                <p class="prod-price">
-                                                    <span class="old-price">145.000đ</span>
-                                                    145.000đ
-                                                </p>
-                                                <div class="box-rating">
-                                                    <div class="rating without-caption">
-                                                        <div
-                                                            class="rating-container theme-krajee-fa rating-md rating-animate rating-disabled">
-                                                            <div class="clear-rating" title="Clear">
-                                                                <i class="glyphicon glyphicon-minus-sign"></i>
-                                                            </div>
-                                                            <div class="rating-stars">
-                                                                <span class="empty-stars">
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="filled-stars" style="width: 75%;">
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="rating-number">(2)</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center">
-                                                    <span class="out-of-stock">OUT OF STOCK</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <a href="" class="prod-img">
-                                                    <img src="../images/shop/prod-2.jpg" alt="" class="img-desktop">
-                                                    <img src="../images/shop/prod-6.jpg" alt="" class="img-hover">
-                                                </a>
-                                                <a href="" class="prod-title">Bamboo Charcoal</a>
-                                                <p class="prod-desc">hydrating treatment</p>
-                                                <p class="prod-price">
-                                                    <span class="old-price">145.000</span>
-                                                    145.000
-                                                </p>
-                                                <div class="box-rating">
-                                                    <div class="rating without-caption">
-                                                        <div
-                                                            class="rating-container theme-krajee-fa rating-md rating-animate rating-disabled">
-                                                            <div class="clear-rating" title="Clear">
-                                                                <i class="glyphicon glyphicon-minus-sign"></i>
-                                                            </div>
-                                                            <div class="rating-stars">
-                                                                <span class="empty-stars">
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="filled-stars" style="width: 75%;">
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="rating-number">(2)</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center">
-                                                    <span class="out-of-stock">OUT OF STOCK</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <a href="" class="prod-img">
-                                                    <img src="../images/shop/prod-3.jpg" alt="" class="img-desktop">
-                                                    <img src="../images/shop/prod-7.jpg" alt="" class="img-hover">
-                                                </a>
-                                                <a href="" class="prod-title">Bamboo Charcoal</a>
-                                                <p class="prod-desc">hydrating treatment</p>
-                                                <p class="prod-price">
-                                                    <span class="old-price">145.000</span>
-                                                    145.000
-                                                </p>
-                                                <div class="box-rating">
-                                                    <div class="rating without-caption">
-                                                        <div
-                                                            class="rating-container theme-krajee-fa rating-md rating-animate rating-disabled">
-                                                            <div class="clear-rating" title="Clear">
-                                                                <i class="glyphicon glyphicon-minus-sign"></i>
-                                                            </div>
-                                                            <div class="rating-stars">
-                                                                <span class="empty-stars">
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="filled-stars" style="width: 75%;">
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="rating-number">(2)</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center">
-                                                    <span class="out-of-stock">OUT OF STOCK</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <a href="" class="prod-img">
-                                                    <img src="../images/shop/prod-4.jpg" alt="" class="img-desktop">
-                                                    <img src="../images/shop/prod-2.jpg" alt="" class="img-hover">
-                                                </a>
-                                                <a href="" class="prod-title">Bamboo Charcoal</a>
-                                                <p class="prod-desc">hydrating treatment</p>
-                                                <p class="prod-price">
-                                                    <span class="old-price">145.000</span>
-                                                    145.000
-                                                </p>
-                                                <div class="box-rating">
-                                                    <div class="rating without-caption">
-                                                        <div
-                                                            class="rating-container theme-krajee-fa rating-md rating-animate rating-disabled">
-                                                            <div class="clear-rating" title="Clear">
-                                                                <i class="glyphicon glyphicon-minus-sign"></i>
-                                                            </div>
-                                                            <div class="rating-stars">
-                                                                <span class="empty-stars">
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="filled-stars" style="width: 75%;">
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="rating-number">(2)</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center">
-                                                    <span class="out-of-stock">OUT OF STOCK</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="prod-showcase-slider owl-carousel">
+                    <div>
+                        <div class="prod-item prod-item_desk" data-id="12">
+                            <a href="https://illusbeauty.com/en/nhan-ban-cua-nhan-ban-cua-bamboo-skin" class="prod-img">
+                                <img src="../images/shop/prod-4-bk.jpg" alt="">
+                                <img src="../images/shop/prod-5-bk.jpg" alt="" class="img-hover">
+                            </a>
+                            <a href="https://illusbeauty.com/en/nhan-ban-cua-nhan-ban-cua-bamboo-skin"
+                                class="prod-title">Bamboo Charcoal</a>
+                            <p class="prod-desc">hydrating treatment</p>
+                            <p class="prod-price">
+
+                                <span class="old-price"></span>
+
+                                145.000đ</p>
+                            <div class="box-rating">
+                                <div class="rating without-caption disable">
+                                    <input type="text" class="kv-fa rating-loading" value="5" title=""
+                                        readonly="readonly">
                                 </div>
+                                <span class="rating-number"></span>
                             </div>
-                            <div class="owl-item">
-                                <div>
-                                    <div class="prod-item prod-item_desk">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <a href="" class="prod-img">
-                                                    <img src="../images/shop/prod-1.jpg" alt="" class="img-desktop">
-                                                    <img src="../images/shop/prod-5.jpg" alt="" class="img-hover">
-                                                </a>
-                                                <a href="" class="prod-title">Bamboo Charcoal</a>
-                                                <p class="prod-desc">hydrating treatment</p>
-                                                <p class="prod-price">
-                                                    <span class="old-price">145.000đ</span>
-                                                    145.000đ
-                                                </p>
-                                                <div class="box-rating">
-                                                    <div class="rating without-caption">
-                                                        <div
-                                                            class="rating-container theme-krajee-fa rating-md rating-animate rating-disabled">
-                                                            <div class="clear-rating" title="Clear">
-                                                                <i class="glyphicon glyphicon-minus-sign"></i>
-                                                            </div>
-                                                            <div class="rating-stars">
-                                                                <span class="empty-stars">
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="filled-stars" style="width: 75%;">
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="rating-number">(2)</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center">
-                                                    <span class="out-of-stock">OUT OF STOCK</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <a href="" class="prod-img">
-                                                    <img src="../images/shop/prod-2.jpg" alt="" class="img-desktop">
-                                                    <img src="../images/shop/prod-6.jpg" alt="" class="img-hover">
-                                                </a>
-                                                <a href="" class="prod-title">Bamboo Charcoal</a>
-                                                <p class="prod-desc">hydrating treatment</p>
-                                                <p class="prod-price">
-                                                    <span class="old-price">145.000</span>
-                                                    145.000
-                                                </p>
-                                                <div class="box-rating">
-                                                    <div class="rating without-caption">
-                                                        <div
-                                                            class="rating-container theme-krajee-fa rating-md rating-animate rating-disabled">
-                                                            <div class="clear-rating" title="Clear">
-                                                                <i class="glyphicon glyphicon-minus-sign"></i>
-                                                            </div>
-                                                            <div class="rating-stars">
-                                                                <span class="empty-stars">
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="filled-stars" style="width: 75%;">
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="rating-number">(2)</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center">
-                                                    <span class="out-of-stock">OUT OF STOCK</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <a href="" class="prod-img">
-                                                    <img src="../images/shop/prod-3.jpg" alt="" class="img-desktop">
-                                                    <img src="../images/shop/prod-7.jpg" alt="" class="img-hover">
-                                                </a>
-                                                <a href="" class="prod-title">Bamboo Charcoal</a>
-                                                <p class="prod-desc">hydrating treatment</p>
-                                                <p class="prod-price">
-                                                    <span class="old-price">145.000</span>
-                                                    145.000
-                                                </p>
-                                                <div class="box-rating">
-                                                    <div class="rating without-caption">
-                                                        <div
-                                                            class="rating-container theme-krajee-fa rating-md rating-animate rating-disabled">
-                                                            <div class="clear-rating" title="Clear">
-                                                                <i class="glyphicon glyphicon-minus-sign"></i>
-                                                            </div>
-                                                            <div class="rating-stars">
-                                                                <span class="empty-stars">
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="filled-stars" style="width: 75%;">
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="rating-number">(2)</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center">
-                                                    <span class="out-of-stock">OUT OF STOCK</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <a href="" class="prod-img">
-                                                    <img src="../images/shop/prod-4.jpg" alt="" class="img-desktop">
-                                                    <img src="../images/shop/prod-2.jpg" alt="" class="img-hover">
-                                                </a>
-                                                <a href="" class="prod-title">Bamboo Charcoal</a>
-                                                <p class="prod-desc">hydrating treatment</p>
-                                                <p class="prod-price">
-                                                    <span class="old-price">145.000</span>
-                                                    145.000
-                                                </p>
-                                                <div class="box-rating">
-                                                    <div class="rating without-caption">
-                                                        <div
-                                                            class="rating-container theme-krajee-fa rating-md rating-animate rating-disabled">
-                                                            <div class="clear-rating" title="Clear">
-                                                                <i class="glyphicon glyphicon-minus-sign"></i>
-                                                            </div>
-                                                            <div class="rating-stars">
-                                                                <span class="empty-stars">
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="filled-stars" style="width: 75%;">
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="rating-number">(2)</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center">
-                                                    <span class="out-of-stock">OUT OF STOCK</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="text-center">
+                                <span class="out-of-stock">HẾT HÀNG</span>
                             </div>
-                            <div class="owl-item">
-                                <div>
-                                    <div class="prod-item prod-item_desk">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <a href="" class="prod-img">
-                                                    <img src="../images/shop/prod-1.jpg" alt="" class="img-desktop">
-                                                    <img src="../images/shop/prod-5.jpg" alt="" class="img-hover">
-                                                </a>
-                                                <a href="" class="prod-title">Bamboo Charcoal</a>
-                                                <p class="prod-desc">hydrating treatment</p>
-                                                <p class="prod-price">
-                                                    <span class="old-price">145.000đ</span>
-                                                    145.000đ
-                                                </p>
-                                                <div class="box-rating">
-                                                    <div class="rating without-caption">
-                                                        <div
-                                                            class="rating-container theme-krajee-fa rating-md rating-animate rating-disabled">
-                                                            <div class="clear-rating" title="Clear">
-                                                                <i class="glyphicon glyphicon-minus-sign"></i>
-                                                            </div>
-                                                            <div class="rating-stars">
-                                                                <span class="empty-stars">
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="filled-stars" style="width: 75%;">
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="rating-number">(2)</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center">
-                                                    <span class="out-of-stock">OUT OF STOCK</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <a href="" class="prod-img">
-                                                    <img src="../images/shop/prod-2.jpg" alt="" class="img-desktop">
-                                                    <img src="../images/shop/prod-6.jpg" alt="" class="img-hover">
-                                                </a>
-                                                <a href="" class="prod-title">Bamboo Charcoal</a>
-                                                <p class="prod-desc">hydrating treatment</p>
-                                                <p class="prod-price">
-                                                    <span class="old-price">145.000</span>
-                                                    145.000
-                                                </p>
-                                                <div class="box-rating">
-                                                    <div class="rating without-caption">
-                                                        <div
-                                                            class="rating-container theme-krajee-fa rating-md rating-animate rating-disabled">
-                                                            <div class="clear-rating" title="Clear">
-                                                                <i class="glyphicon glyphicon-minus-sign"></i>
-                                                            </div>
-                                                            <div class="rating-stars">
-                                                                <span class="empty-stars">
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="filled-stars" style="width: 75%;">
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="rating-number">(2)</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center">
-                                                    <span class="out-of-stock">OUT OF STOCK</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <a href="" class="prod-img">
-                                                    <img src="../images/shop/prod-3.jpg" alt="" class="img-desktop">
-                                                    <img src="../images/shop/prod-7.jpg" alt="" class="img-hover">
-                                                </a>
-                                                <a href="" class="prod-title">Bamboo Charcoal</a>
-                                                <p class="prod-desc">hydrating treatment</p>
-                                                <p class="prod-price">
-                                                    <span class="old-price">145.000</span>
-                                                    145.000
-                                                </p>
-                                                <div class="box-rating">
-                                                    <div class="rating without-caption">
-                                                        <div
-                                                            class="rating-container theme-krajee-fa rating-md rating-animate rating-disabled">
-                                                            <div class="clear-rating" title="Clear">
-                                                                <i class="glyphicon glyphicon-minus-sign"></i>
-                                                            </div>
-                                                            <div class="rating-stars">
-                                                                <span class="empty-stars">
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="filled-stars" style="width: 75%;">
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="rating-number">(2)</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center">
-                                                    <span class="out-of-stock">OUT OF STOCK</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <a href="" class="prod-img">
-                                                    <img src="../images/shop/prod-4.jpg" alt="" class="img-desktop">
-                                                    <img src="../images/shop/prod-2.jpg" alt="" class="img-hover">
-                                                </a>
-                                                <a href="" class="prod-title">Bamboo Charcoal</a>
-                                                <p class="prod-desc">hydrating treatment</p>
-                                                <p class="prod-price">
-                                                    <span class="old-price">145.000</span>
-                                                    145.000
-                                                </p>
-                                                <div class="box-rating">
-                                                    <div class="rating without-caption">
-                                                        <div
-                                                            class="rating-container theme-krajee-fa rating-md rating-animate rating-disabled">
-                                                            <div class="clear-rating" title="Clear">
-                                                                <i class="glyphicon glyphicon-minus-sign"></i>
-                                                            </div>
-                                                            <div class="rating-stars">
-                                                                <span class="empty-stars">
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="far fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="filled-stars" style="width: 75%;">
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                    <span class="star">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                </span>
-                                                                <span class="rating-number">(2)</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center">
-                                                    <span class="out-of-stock">OUT OF STOCK</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                    </div>
+                    <div>
+
+                        <div class="prod-item prod-item_desk" data-id="11">
+                            <a href="https://illusbeauty.com/en/nhan-ban-cua-bamboo-skin" class="prod-img">
+                                <img src="../images/shop/prod-6.jpg" alt="">
+                                <img src="../images/shop/prod-4-bk.jpg" alt="" class="img-hover">
+                            </a>
+                            <a href="https://illusbeauty.com/en/nhan-ban-cua-bamboo-skin" class="prod-title">Bamboo
+                                Charcoal </a>
+                            <p class="prod-desc">hydrating treatment</p>
+                            <p class="prod-price">
+
+                                <span class="old-price">145.000đ</span>
+
+                                145.000đ</p>
+                            <div class="box-rating">
+                                <div class="rating without-caption disable">
+                                    <input type="text" class="kv-fa rating-loading" value="5" title=""
+                                        readonly="readonly">
                                 </div>
+                                <span class="rating-number"></span>
+                            </div>
+                            <div class="text-center">
+                                <span class="out-of-stock">HẾT HÀNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                        <div class="prod-item prod-item_desk" data-id="4">
+                            <a href="https://illusbeauty.com/en/oily-bamboo" class="prod-img">
+                                <img src="../images/shop/prod-2-bk.jpg" alt="">
+                                <img src="../images/shop/prod-3-bk.jpg" alt="" class="img-hover">
+                            </a>
+                            <a href="https://illusbeauty.com/en/oily-bamboo" class="prod-title">Bamboo Charcoal</a>
+                            <p class="prod-desc">hydrating treatment</p>
+                            <p class="prod-price">
+
+                                <span class="old-price">145.000đ</span>
+
+                                145.000đ</p>
+                            <div class="box-rating">
+                                <div class="rating without-caption disable">
+                                    <input type="text" class="kv-fa rating-loading" value="5" title=""
+                                        readonly="readonly">
+                                </div>
+                                <span class="rating-number"></span>
+                            </div>
+                            <div class="text-center">
+                                <span class="out-of-stock">HẾT HÀNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                        <div class="prod-item prod-item_desk" data-id="5">
+                            <a href="https://illusbeauty.com/en/skin-care" class="prod-img">
+                                <img src="../images/shop/prod-3-bk.jpg" alt="">
+                                <img src="../images/shop/prod-6.jpg" alt="" class="img-hover">
+                            </a>
+                            <a href="https://illusbeauty.com/en/skin-care" class="prod-title">Bamboo Charcoal</a>
+                            <p class="prod-desc">hydrating treatment</p>
+                            <p class="prod-price">
+
+                                <span class="old-price">145.000đ</span>
+
+                                145.000đ</p>
+                            <div class="box-rating">
+                                <div class="rating without-caption disable">
+                                    <input type="text" class="kv-fa rating-loading" value="5" title=""
+                                        readonly="readonly">
+                                </div>
+                                <span class="rating-number"></span>
+                            </div>
+                            <div class="text-center">
+                                <span class="out-of-stock">HẾT HÀNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                        <div class="prod-item prod-item_desk" data-id="7">
+                            <a href="https://illusbeauty.com/en/test-product-111" class="prod-img">
+                                <img src="../images/shop/prod-3-bk.jpg" alt="">
+                                <img src="../images/shop/prod-2-bk.jpg" alt="" class="img-hover">
+                            </a>
+                            <a href="https://illusbeauty.com/en/test-product-111" class="prod-title">Bamboo Charcoal</a>
+                            <p class="prod-desc">hydrating treatment</p>
+                            <p class="prod-price">
+
+                                <span class="old-price"></span>
+
+                                145.000đ</p>
+                            <div class="box-rating">
+                                <div class="rating without-caption disable">
+                                    <input type="text" class="kv-fa rating-loading" value="5" title=""
+                                        readonly="readonly">
+                                </div>
+                                <span class="rating-number"></span>
+                            </div>
+                            <div class="text-center">
+                                <a href="javascript:;" class="site-btn-white add_to_cart" data-variant="7" data-id="7"
+                                    data-size="0.8">Đặt Hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                        <div class="prod-item prod-item_desk" data-id="2">
+                            <a href="https://illusbeauty.com/en/bamboo-2" class="prod-img">
+                                <img src="../images/shop/prod-1.jpg" alt="">
+                                <img src="../images/shop/prod-5.jpg" alt="" class="img-hover">
+                            </a>
+                            <a href="https://illusbeauty.com/en/bamboo-2" class="prod-title">Bamboo Charcoal</a>
+                            <p class="prod-desc">hydrating treatment</p>
+                            <p class="prod-price">
+
+                                <span class="old-price"></span>
+
+                                145.000đ</p>
+                            <div class="box-rating">
+                                <div class="rating without-caption disable">
+                                    <input type="text" class="kv-fa rating-loading" value="5" title=""
+                                        readonly="readonly">
+                                </div>
+                                <span class="rating-number"></span>
+                            </div>
+                            <div class="text-center">
+                                <span class="out-of-stock">HẾT HÀNG</span>
                             </div>
                         </div>
                     </div>
@@ -1007,121 +476,91 @@
                 </p>
             </div>
             <div class="row">
-                <div class="testimonial-slider owl-carousel owl-rtl owl-loaded owl-drag">
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage">
-                            <div class="owl-item">
-                                <h4 class="slider-current-page">
-                                    <span class="current">1</span>
-                                    /
-                                    <span class="current">2</span>
-                                </h4>
-                                <div class="ISSlideOuter">
-                                    <div class="ISSlideWrapper usingCss ls-hover">
-                                        <ul class="lightSlider lsGrab lSSlide">
-                                            <li class="item-lslide">
-                                                <div class="item-box">
-                                                    <div class="card-img">
-                                                        <img src="../images/index/testimonial-1.jpg" alt="">
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="card-info col-xs-12">
-                                                            <div class="col-xs-12 col-md-2 col-sm-3">
-                                                                <a href="" class="site-btn-clear">SEE MORE</a>
-                                                            </div>
-                                                            <div class="col-xs-12 col-md-10 col-sm-9">
-                                                                <p class="testi-info">
-                                                                    <strong>Joanna Nguyen</strong>
-                                                                    <span>-</span>
-                                                                    Ho Chi Minh city
-                                                                </p>
-                                                                <section class="testi-feedback">
-                                                                    <p>
-                                                                        "We bring you truly natural, cruelty free
-                                                                        skincare that
-                                                                        provides results you can see and feel. We also
-                                                                        believe
-                                                                        skincare should smell and feel amazing and add
-                                                                        enjoyment to
-                                                                        your daily routine."
-                                                                    </p>
-                                                                </section>
-                                                                <style media="screen">
-                                                                    section.testi-feedback {
-                                                                        height: 80px;
-                                                                        overflow: hidden;
-                                                                        margin-bottom: 30px;
-                                                                    }
-                                                                </style>
-                                                            </div>
-                                                            <div class="col-xs-12 col-sm-5">
-                                                                <a href="" class="site-btn-white">SEE MORE</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                <div class="testimonial-slider">
+                    <h4 class="slider-current-page">
+                        <span id="#current">1</span>
+                        /
+                        <span id="total">2</span>
+                    </h4>
+                    <ul id="testimonial-slider">
+                        <li class="item">
+                            <div class="item-box">
+                                <div class="card-img">
+                                    <img src="../images/about/about-us-bk.jpg" alt="">
+                                </div>
+                                <div class="row">
+                                    <div class="card-info col-xs-12">
+                                        <div class="col-xs-12 col-md-2 col-sm-3">
+                                            <a href="https://illusbeauty.com/en/all-photo" class="site-btn-clear">XEM
+                                                THÊM</a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-10 col-sm-9">
+                                            <p class="testi-info">
+                                                <strong>Joanna Nguyen</strong>
+                                                <span>
+                                                    -
+                                                </span>Ho Chi Minh city</p>
+                                            <section class="testi-feedback">
+                                                <p>"We bring you truly natural, cruelty free skincare that provides
+                                                    results you can see and feel. We also believe skincare should smell
+                                                    and feel amazing and add enjoyment to your daily routine."</p>
+                                            </section>
+                                            <style media="screen">
+                                                section.testi-feedback {
+                                                    height: 80px;
+                                                    overflow: hidden;
+                                                    margin-bottom: 30px;
+                                                }
+                                            </style>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-5">
+                                            <a href="https://illusbeauty.com/en/lover" class="site-btn-white">XEM
+                                                THÊM</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item">
-                                <h4 class="slider-current-page">
-                                    <span class="current">2</span>
-                                    /
-                                    <span class="current">2</span>
-                                </h4>
-                                <div class="ISSlideOuter">
-                                    <div class="ISSlideWrapper usingCss ls-hover">
-                                        <ul class="lightSlider lsGrab lSSlide">
-                                            <li class="item-lslide">
-                                                <div class="item-box">
-                                                    <div class="card-img">
-                                                        <img src="../images/index/testimonial-1.jpg" alt="">
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="card-info col-xs-12">
-                                                            <div class="col-xs-12 col-md-2 col-sm-3">
-                                                                <a href="" class="site-btn-clear">SEE MORE</a>
-                                                            </div>
-                                                            <div class="col-xs-12 col-md-10 col-sm-9">
-                                                                <p class="testi-info">
-                                                                    <strong>Joanna Nguyen</strong>
-                                                                    <span>-</span>
-                                                                    Ho Chi Minh city
-                                                                </p>
-                                                                <section class="testi-feedback">
-                                                                    <p>
-                                                                        "We bring you truly natural, cruelty free
-                                                                        skincare that
-                                                                        provides results you can see and feel. We also
-                                                                        believe
-                                                                        skincare should smell and feel amazing and add
-                                                                        enjoyment to
-                                                                        your daily routine."
-                                                                    </p>
-                                                                </section>
-                                                                <style media="screen">
-                                                                    section.testi-feedback {
-                                                                        height: 80px;
-                                                                        overflow: hidden;
-                                                                        margin-bottom: 30px;
-                                                                    }
-                                                                </style>
-                                                            </div>
-                                                            <div class="col-xs-12 col-sm-5">
-                                                                <a href="" class="site-btn-white">SEE MORE</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                        </li>
+                        <li class="item">
+                            <div class="item-box">
+                                <div class="card-img">
+                                    <img src="../images/about/about-us-bk.jpg" alt="">
+                                </div>
+                                <div class="row">
+                                    <div class="card-info col-xs-12">
+                                        <div class="col-xs-12 col-md-2 col-sm-3">
+                                            <a href="https://illusbeauty.com/en/all-photo" class="site-btn-clear">XEM
+                                                THÊM</a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-10 col-sm-9">
+                                            <p class="testi-info">
+                                                <strong>Joanna Nguyen</strong>
+                                                <span>
+                                                    -
+                                                </span>Ho Chi Minh city</p>
+                                            <section class="testi-feedback">
+                                                <p>"We bring you truly natural, cruelty free skincare that provides
+                                                    results you can see and feel. We also believe skincare should smell
+                                                    and feel amazing and add enjoyment to your daily routine."</p>
+                                            </section>
+                                            <style media="screen">
+                                                section.testi-feedback {
+                                                    height: 80px;
+                                                    overflow: hidden;
+                                                    margin-bottom: 30px;
+                                                }
+                                            </style>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-5">
+                                            <a href="https://illusbeauty.com/en/lover" class="site-btn-white">XEM
+                                                THÊM</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
+                    <div class="s-box-none"></div>
                 </div>
             </div>
         </section>
@@ -1251,7 +690,7 @@
                 <p></p>
             </div>
             <div class="section-body">
-                
+
                 <div class="gallery-showcase hidden-xs">
                     <div class="gallery row">
                         <div class="card col-md-3">
@@ -1397,7 +836,30 @@
     </footer>
     <!-- End header -->
     <!-- Script -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/fontawesome.min.js"></script>
     <script>
+        $('#search-header-form').submit(function () {
+            var data = $(this).serialize();
+            var key_word = $(this).find('input[type="product"]').val();
+            if (!key_word) {
+                toastr.remove();
+                toastr.error("Vui lòng nhập từ khóa.");
+                $(this).find('input[type="product"]').addClass('error-form');
+                return;
+            }
+            window.location.href = "/en/tim-kiem?" + data;
+        })
+        $(document).ready(function () {
+            function reloadPage(url = null) {
+                setTimeout(function () {
+                    if (url) location.href = url;
+                    else location.reload();
+                }, 100);
+            }
+        })
         $('.home-slider').owlCarousel({
             loop: true,
             autoplay: false,
@@ -1408,36 +870,28 @@
             navText: ["", ""],
             rewindNav: true,
             nav: true,
-        })
+        });
+
         $(document).ready(function () {
             $(".prod-showcase-slider").owlCarousel();
         });
         $('.prod-showcase-slider').owlCarousel({
             loop: true,
-            autoplay: false,
-            autoplayTimeout: 5000,
-            margin: 0,
-            nav: true,
+            margin: 10,
             responsiveClass: true,
-            items: 1,
             navText: ["", ""],
-            rewindNav: true,
             nav: true,
-        });
-        $(document).ready(function () {
-            $(".testimonial-slider").owlCarousel();
-        });
-        $('.testimonial-slider').owlCarousel({
-            loop: true,
-            autoplay: false,
-            autoplayTimeout: 5000,
-            margin: 0,
-            nav: true,
-            responsiveClass: true,
-            items: 1,
-            navText: ["", ""],
-            rewindNav: true,
-            nav: true,
+            dots: false,
+            slideBy: 4,
+            rtl: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                767: {
+                    items: 4,
+                },
+            }
         });
         $(document).ready(function () {
             $(".about-slider").owlCarousel();
@@ -1456,40 +910,6 @@
             thumbs: true,
             thumbsPrerendered: true
         });
-        // $('.about-slider').slick({
-        //     slidesToShow: 1,
-        //     slidesToScroll: 1,
-        //     arrows: false,
-        //     fade: true,
-        //     asNavFor: '.owl-thumbs'
-        // });
-        // $('.owl-thumbs').slick({
-        //     slidesToShow: 4,
-        //     slidesToScroll: 1,
-        //     asNavFor: '.slider-for',
-        //     arrows: false,
-        //     dots: false,
-        //     centerMode: true,
-        //     focusOnSelect: true
-        // });
-        // $('.gallery-showcase-slider').owlCarousel({
-        //     loop: true,
-        //     margin: 10,
-        //     dots: false,
-        //     nav: true,
-        //     navText: ["", ""],
-        //     responsiveClass: true,
-        //     responsive: {
-        //         0: {
-        //             items: 1,
-        //             autoplay: true,
-        //             autoplayTimeout: 4000
-        //         },
-        //         480: {
-        //             items: 2,
-        //         }
-        //     }
-        // });
         $(document).ready(function () {
             $(".gallery-showcase-slider").owlCarousel();
         });
@@ -1509,18 +929,6 @@
         });
 
     </script>
-    <script src="../themes/slick.js"></script>
-    <!-- <script src="../themes/jquery-3.4.1.min.js"></script> -->
-    <!-- <script src="../themes/jquery-3.4.1.min.js"></script> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
     <!-- End Script -->
 </body>
 
