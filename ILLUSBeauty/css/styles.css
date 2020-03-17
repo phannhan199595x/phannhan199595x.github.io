@@ -1392,4 +1392,31 @@ h6 {
 h3 {
     font-size: 30px;
 }
+.owl-carousel .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.about-slider .y-thumb-slider .item-slider {
+    width: calc(50% -20px);
+    display: inline-block;
+    padding: 0 5px;
+    padding-bottom: 30px;
+}
+.about-slider .y-thumb-slider {
+    width: 100%;
+}
+.item-slider {
+    opacity: 0.5;
+}
+.item-slider .active {
+    opacity: 1;
+}
+@media (min-width: 768px) {
+    .about-slider .item .card-info .card-desc p {
+        font-size: 35px;
+        line-height: 42px;
+        text-align: center;
+    }
+}
 /* end update */

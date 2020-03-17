@@ -593,87 +593,77 @@
                 </div>
             </div>
             <div class="clearfix"></div>
-            <div class="container">
-                <div class="section-about-slider">
-                    <div class="about-slider owl-carousel owl-theme owl-loaded owl-drag" data-slider-id="1">
-                        <div class="owl-stage-outer">
-                            <div class="owl-stage">
-                                <div class="owl-item">
-                                    <div class="item">
-                                        <div class="card">
-                                            <div class="box-img">
-                                                <img src="../images/index/about-slider-1.jpg" alt="">
-                                            </div>
-                                            <div class="card-info">
-                                                <div class="card-desc">
-                                                    <p>"Accessible, affordable products that feel luxurious without
-                                                        being frou-frou" 1</p>
-                                                </div>
-                                            </div>
-                                        </div>
+            <div class="container about-slider">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="sync1" class="owl-carousel owl-theme sync1" data-sync="s1">
+                            <div class="item">
+                                <a class="item-slider" href="#">
+                                    <img src="../images/index/about-slider-1.jpg" alt="">
+                                </a>
+                                <div class="card-info">
+                                    <div class="card-desc">
+                                        <p>"Accessible, affordable products that feel luxurious without being frou-frou"
+                                            1</p>
                                     </div>
                                 </div>
-                                <div class="owl-item">
-                                    <div class="item">
-                                        <div class="card">
-                                            <div class="box-img">
-                                                <img src="../images/index/about-slider-1.jpg" alt="">
-                                            </div>
-                                            <div class="card-info">
-                                                <div class="card-desc">
-                                                    <p>"Accessible, affordable products that feel luxurious without
-                                                        being frou-frou" 1</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                            </div>
+                            <div class="item">
+                                <a class="item-slider" href="#">
+                                    <img src="../images/index/about-slider-1.jpg" alt="">
+                                </a>
+                                <div class="card-info">
+                                    <div class="card-desc">
+                                        <p>"Accessible, affordable products that feel luxurious without being frou-frou"
+                                            1</p>
                                     </div>
                                 </div>
-                                <div class="owl-item">
-                                    <div class="item">
-                                        <div class="card">
-                                            <div class="box-img">
-                                                <img src="../images/index/about-slider-1.jpg" alt="">
-                                            </div>
-                                            <div class="card-info">
-                                                <div class="card-desc">
-                                                    <p>"Accessible, affordable products that feel luxurious without
-                                                        being frou-frou" 1</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                            </div>
+                            <div class="item">
+                                <a class="item-slider" href="#">
+                                    <img src="../images/index/about-slider-1.jpg" alt="">
+                                </a>
+                                <div class="card-info">
+                                    <div class="card-desc">
+                                        <p>"Accessible, affordable products that feel luxurious without being frou-frou"
+                                            1</p>
                                     </div>
                                 </div>
-                                <div class="owl-item">
-                                    <div class="item">
-                                        <div class="card">
-                                            <div class="box-img">
-                                                <img src="../images/index/about-slider-1.jpg" alt="">
-                                            </div>
-                                            <div class="card-info">
-                                                <div class="card-desc">
-                                                    <p>"Accessible, affordable products that feel luxurious without
-                                                        being frou-frou" 1</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                            </div>
+                            <div class="item">
+                                <a class="item-slider" href="#">
+                                    <img src="../images/index/about-slider-1.jpg" alt="">
+                                </a>
+                                <div class="card-info">
+                                    <div class="card-desc">
+                                        <p>"Accessible, affordable products that feel luxurious without being frou-frou"
+                                            1</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="owl-thumbs" data-slider-id="1">
-                        <button class="owl-thumb-item">
-                            <img src="../images/index/elle.png" alt="">
-                        </button>
-                        <button class="owl-thumb-item">
-                            <img src="../images/index/dep.png" alt="">
-                        </button>
-                        <button class="owl-thumb-item">
-                            <img src="../images/index/vogue.png" alt="">
-                        </button>
-                        <button class="owl-thumb-item">
-                            <img src="../images/index/cosmo.png" alt="">
-                        </button>
+                        <div id="sync2" class="y-thumb-slider owl-carousel owl-theme sync2" data-sync="s1">
+                            <div class="item">
+                                <a class="item-slider" href="#">
+                                    <img src="../images/index/elle.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="item-slider" href="#">
+                                    <img src="../images/index/dep.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="item-slider" href="#">
+                                    <img src="../images/index/vogue.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="item-slider" href="#">
+                                    <img src="../images/index/cosmo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -893,23 +883,109 @@
                 },
             }
         });
+        // $(document).ready(function () {
+        //     $(".about-slider").owlCarousel();
+        // });
+        // $('.about-slider').owlCarousel({
+        //     loop: true,
+        //     autoplay: false,
+        //     autoplayTimeout: 5000,
+        //     margin: 0,
+        //     responsiveClass: true,
+        //     items: 1,
+        //     navText: ["", ""],
+        //     rewindNav: true,
+        //     nav: false,
+        //     dots: false,
+        //     thumbs: true,
+        //     thumbsPrerendered: true
+        // });
+
         $(document).ready(function () {
-            $(".about-slider").owlCarousel();
+            var sync1 = $(".sync1");
+            var sync2 = $(".sync2");
+            var slidesPerPage = 4; //globaly define number of elements per page
+            var syncedSecondary = true;
+
+            sync1.owlCarousel({
+                items: 1,
+                slideSpeed: 2000,
+                nav: false,
+                autoplay: false,
+                dots: false,
+                loop: true,
+                responsiveRefreshRate: 200,
+                navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+            }).on('changed.owl.carousel', syncPosition);
+
+            sync2.on('initialized.owl.carousel', function () {
+                sync2.find(".owl-item").eq(0).addClass("current");
+            })
+                .owlCarousel({
+                    items: slidesPerPage,
+                    dots: false,
+                    nav: false,
+                    smartSpeed: 200,
+                    slideSpeed: 500,
+                    slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+                    responsiveRefreshRate: 100,
+                }).on('changed.owl.carousel', syncPosition2);
+
+            function syncPosition(el) {
+                let parent = $(this).data("sync");
+                sync2 = $('.sync2[data-sync="' + parent + '"]');
+                //if you set loop to false, you have to restore this next line
+                //var current = el.item.index;
+
+                //if you disable loop you have to comment this block
+                let count = el.item.count - 1;
+                let current = Math.round(el.item.index - (el.item.count / 2) - .5);
+                // var current = 1;
+
+                if (current < 0) {
+                    current = count;
+                }
+                if (current > count) {
+                    current = 0;
+                }
+
+                sync2.find(".owl-item").removeClass("current").eq(current).addClass("current");
+                let onscreen = sync2.find('.owl-item.active').length - 1;
+                let start = sync2.find('.owl-item.active').first().index();
+                let end = sync2.find('.owl-item.active').last().index();
+
+                if (current > end) {
+                    sync2.data('owl.carousel').to(current, 100, true);
+                }
+                if (current < start) {
+                    sync2.data('owl.carousel').to(current - onscreen, 100, true);
+                }
+            }
+
+            function syncPosition2(el) {
+                let parent = $(this).data("sync");
+                sync1 = $('.sync1[data-sync="' + parent + '"]');
+
+                if (syncedSecondary) {
+                    let number = el.item.index;
+                    sync1.data('owl.carousel').to(number, 100, true);
+                }
+            }
+
+            sync2.on("click", ".owl-item", function (e) {
+                e.preventDefault();
+                let parent = $(this).parents('.owl-carousel').data("sync");
+                let number = $(this).index();
+                console.log(parent);
+                sync1 = $('.sync1[data-sync="' + parent + '"]');
+                sync1.data('owl.carousel').to(number, 300, true);
+            });
         });
-        $('.about-slider').owlCarousel({
-            loop: true,
-            autoplay: false,
-            autoplayTimeout: 5000,
-            margin: 0,
-            responsiveClass: true,
-            items: 1,
-            navText: ["", ""],
-            rewindNav: true,
-            nav: false,
-            dots: false,
-            thumbs: true,
-            thumbsPrerendered: true
+
+        $(document).on('show.bs.modal', '.modal', function () {
+            $('.sync2').trigger('refresh.owl.carousel');
         });
+
         $(document).ready(function () {
             $(".gallery-showcase-slider").owlCarousel();
         });
