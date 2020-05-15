@@ -916,6 +916,91 @@ footer .footer-main .social-icon ul li a i {
     text-align: center;
     transition: 0.4s;
 }
+footer .footer-main .subscribe-section h4 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    line-height: 43px;
+    margin-top: 9px;
+}
+footer .footer-main .subscribe-section p {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+footer .footer-main .subscribe-section form {
+    margin-top: 26px;
+}
+footer .footer-main .subscribe-section form input {
+    width: 100%;
+    max-width: 399px;
+    height: 42px;
+    padding: 5px 22px;
+    border: 1px solid #3f3f3f;
+    letter-spacing: 0.9px;
+}
+footer .footer-main .subscribe-section form a.site-btn-black {
+    text-transform: uppercase;
+    padding: 6px 10px;
+    margin-top: 22px;
+    transition: 0.4s;
+    height: 33px;
+    width: 151px;
+    display: block;
+}
+footer .footer-bottom {
+    background-color: #000;
+    padding: 22px 0 33px;
+    margin-top: 30px;
+}
+footer .footer-bottom .box-1368 {
+    max-width: 1398px;
+    width: 100%;
+    margin: 0 auto;
+    background: #000;
+}
+footer .term-of-use ul {
+    float: right;
+    margin-bottom: 0;
+}
+footer .term-of-use ul li {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 18px;
+    list-style-type: none;
+    display: inline-block;
+}
+footer .term-of-use ul li::before {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    content: "";
+    width: 1.7px;
+    height: 10px;
+    background-color: #fff;
+}
+footer .term-of-use ul li a {
+    color: #fff;
+    font-size: 13px;
+}
+footer .copy-right {
+    text-align: left;
+}
+footer .copy-right p {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 0;
+    letter-spacing: 1.35px;
+    font-weight: 300;
+}
+footer .copy-right p span {
+    text-transform: uppercase;
+}
+.row::before {
+    display: table;
+    content: "";
+}
 /* end footer */
 @media (max-width: 1199px) {
     .home-about .section-top .bg-text {
@@ -1074,6 +1159,13 @@ footer .footer-main .social-icon ul li a i {
         padding: 0 5px;
         padding-bottom: 30px;
     }
+    footer .footer-main .subscribe-section {
+        /* margin-left: 84px; */
+    }
+    footer .footer-main .footer-faq .faq-section {
+        padding-left: 6px;
+    }
+
 }
 @media (max-width: 767px) {
     .top-header p {

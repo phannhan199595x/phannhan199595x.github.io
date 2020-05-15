@@ -1,0 +1,83 @@
+/* font Lora */
+@font-face {
+    font-family: "Lora";
+    src: url(../fonts/Lora-Regular.ttf);
+}
+@font-face {
+    font-family: "Lora";
+    font-weight: bold;
+    src: url(../fonts/Lora-Bold.ttf);
+}
+@font-face {
+    font-family: "Lora";
+    font-style: italic;
+    src: url(../fonts/Lora-Italic.ttf);
+}
+@font-face {
+    font-family: "Lora";
+    font-style: italic;
+    font-weight: bold;
+    src: url(../fonts/Lora-BoldItalic.ttf);
+}
+/* font Homemade-Apple */
+@font-face {
+    font-family: "Homemade-Apple";
+    src: url(../fonts/HomemadeApple-Regular.ttf);
+}
+/* font  Brother-1816*/
+/*@font-face {
+    font-family: "Brother";
+    font-weight: bold;
+    font-style: normal;
+    src: url(../fonts/Brother-1816/Brother-1816-Bold.ttf);
+}
+@font-face {
+    font-family: "Brother";
+    font-weight: lighter;
+    font-style: normal;
+    src: url(../fonts/Brother-1816/Brother-1816-Light.ttf);
+}
+@font-face {
+    font-family: "Brother";
+    font-weight: lighter;
+    font-style: italic;
+    src: url(../fonts/Brother-1816/Brother-1816-Light-Italic.ttf);
+}
+@font-face {
+    font-family: "Brother";
+    font-weight: 500;
+    font-style: normal;
+    src: url(../fonts/Brother-1816/Brother-1816-Medium.ttf);
+
+}
+@font-face {
+    font-family: "Brother";
+    font-weight: 500;
+    font-style: italic;
+    src: url(../fonts/Brother-1816/Brother-1816-Medium-Italic.ttf);
+}
+@font-face {
+    font-family: "Brother1";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/Brother-1816/Brother-1816-Regular.ttf);
+}
+@font-face {
+    font-family: "Brother1";
+    font-weight: 400;
+    font-style: italic;
+    src: url(../fonts/Brother-1816/Brother-1816-Regular-Italic.ttf);
+}
+@font-face {
+    font-family: "Brother2";
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/Brother-1816/TipoType-Brother-1816-Book.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Brother2";
+    font-weight: normal;
+    font-style: italic;
+    src: url(../fonts/Brother-1816/TipoType-Brother-1816-Book-Italic.ttf) format('truetype');
+}
+*/
